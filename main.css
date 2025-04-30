@@ -18,7 +18,7 @@
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 150px;
+  gap: 130px;
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.5);
   flex-wrap: wrap;
@@ -40,7 +40,7 @@ nav ul li a::after {
   position: absolute;
   width: 0%;
   height: 2px;
-  background-color: #6e0000;
+  background-color: #a60303;
   left: 0;
   bottom: -4px;
   transition: width 0.3s ease;
@@ -48,7 +48,7 @@ nav ul li a::after {
 }
 
 nav ul li a:hover {
-  color: #6e0000;
+  color: #a60303;
 }
 
 nav ul li a:hover::after {
@@ -107,6 +107,9 @@ font-family: poppins, sans-serif;
 
 }
 
+.footer-nav li img{
+  width: 30px;
+}
 
 .footerline {
   position: absolute;

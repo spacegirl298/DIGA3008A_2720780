@@ -21,6 +21,7 @@ body {
   width: 100%;
   
 }
+
 .heading {
   font-family: footlight mt light, sans-serif;
   color: white;
@@ -102,7 +103,12 @@ body {
   display: block;
 }
 
-
+.url-container img{
+  
+  width: 100px; 
+ 
+  
+}
 
 .image-container:hover {
   filter: brightness(1.2) drop-shadow(0 0 10px #ffffff);
