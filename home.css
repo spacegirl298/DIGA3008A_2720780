@@ -9,7 +9,7 @@
 /*About Me*/
 body {
   
-  background: url("./Homepage/BgImg.jpg") no-repeat;
+  background: url("./homepage/bgImg.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
   overflow-x: hidden;
