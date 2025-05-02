@@ -55,14 +55,16 @@ body {
 
 .text-left,
 .text-right {
-  
+  width: auto;
   flex: 1;
+  margin: 0;
+  padding: 0;
   max-width: 250px;
 }
 
 
 .profile-container {
-  flex-shrink: 0;
+  align-items: center;
   display: flex;
   justify-content: center;
 }
