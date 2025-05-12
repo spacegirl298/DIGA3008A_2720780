@@ -1,22 +1,18 @@
-
-
 /*First thing you see on website*/
 .entry-title {
-  
   text-align: center;
   font-size: 40px;
 }
 /*About Me*/
 body {
-  
   background: url("./homepage/bgImg.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
   overflow-x: hidden;
   background-position: center;
-  font-family: Arial, Helvetica, sans-serif;
+    font-family: Georgia, serif;
   color: white;
-    margin:0;
+  margin: 0;
   padding: 0;
   width: 100%;
   
@@ -30,7 +26,6 @@ body {
   font-size: 90px;
   animation: fadeIn 3s ease-in-out forwards;
 
-  
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -53,16 +48,24 @@ body {
   text-align: center;
 }
 
-.text-left,
-.text-right {
+.text-left {
+  margin-right: 60px;
   width: auto;
   flex: 1;
-  margin: 0;
+  /* margin: 0;*/
   padding: 0;
-  max-width: 250px;
+  max-width: 350px;
+  font-size: 18px;
 }
+.text-right {
+  margin-left: 60px;
+  width: auto;
+  flex: 1;
 
-
+  padding: 0;
+  max-width: 350px;
+  font-size: 18px;
+}
 .profile-container {
   align-items: center;
   display: flex;
@@ -75,12 +78,25 @@ body {
   object-fit: cover;
 }
 
+.url-container {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.url-container img {
+  width: 60px;
+}
 /*links to sections*/
 .image-row {
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 20px; 
+  gap: 20px;
   margin: 20px auto 100px;
   padding: 0 10px;
   max-width: 1200px;
@@ -90,39 +106,84 @@ body {
 .rectangular-image {
   width: 100%;
   height: 100%;
-  
+
   object-fit: cover;
   display: block;
 }
 
-.url-container img{
-  
-  width: 100px; 
- 
-  
-}
-
 .image-container:hover {
   filter: brightness(1.2) drop-shadow(0 0 10px #ffffff);
-  transform: scale(1.02); 
+  transform: scale(1.02);
 }
 
-/*Mobile version*/
-@media (max-width: 600px) {
-  .image-row {
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-  }
-
-  .image-container {
-    width: 90%;
-    margin-top: 30px;
-  }
-
-  .border-text {
-    font-size: 16px;
-  }
+/*experience*/
+.experience {
+ padding: 200px;
 }
 
+.entry-title {
+  font-size: 32px;
+  color: white;
+  text-align: center;
+  margin-bottom: 50px;
+}
 
+.timeline-entry {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.left {
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+
+.star-year {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.star {
+  width: 60px;
+  
+}
+
+.year {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+}
+
+.line {
+  width: 1px;
+  height: 80px;
+  border-left: 1px dashed #aaa;
+  margin-left: 12px;
+}
+
+.right {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.right h3 {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+  color: white;
+}
+
+.right p {
+  font-size: 15px;
+  line-height: 1.4;
+  margin: 0;
+  color: #ccc;
+}
