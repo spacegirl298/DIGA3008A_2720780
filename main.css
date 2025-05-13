@@ -3,6 +3,17 @@
     padding: 0;
     box-sizing: border-box;
   }
+  body {
+  background: url("./homepage/bgImg.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
+  background-position: center;
+  color: white;
+ 
+  
+}
+
 .navbar {
     position: sticky;
     top: 0;
