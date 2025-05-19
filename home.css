@@ -204,6 +204,9 @@ body {
     padding-bottom: 80px;
     width: 10%;
   }
+  .heading img{
+    width: 50%;
+  }
 
   .about-flex {
     flex-direction: column;
