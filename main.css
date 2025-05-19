@@ -133,6 +133,9 @@ html, body {
   width: 90%;
   height: auto;
 }
+#About-Me{
+  padding-top: 20px;
+}
 @media (max-width: 768px) {
   .navbar ul,
   .footer-nav ul {
@@ -162,4 +165,5 @@ html, body {
     width: 24px;
 
   }
+
 }
