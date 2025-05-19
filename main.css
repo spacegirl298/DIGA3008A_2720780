@@ -136,7 +136,7 @@ html, body {
 @media (max-width: 768px) {
   .navbar ul,
   .footer-nav ul {
-    flex-direction: column;
+    flex-direction: row;
     gap: 20px;
     padding: 10px;
   }
@@ -155,10 +155,11 @@ html, body {
   .navline,
   .footerline {
     width: 95%;
-    top: -10px;
+    
   }
 
   .footer-nav li img {
     width: 24px;
+
   }
 }
