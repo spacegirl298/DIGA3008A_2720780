@@ -6,6 +6,13 @@ h1{
   
   color: white;
 }
+h2{
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  
+  color: white;
+}
 .image-row {
  
   display: flex;
@@ -25,6 +32,9 @@ h1{
 
   object-fit: cover;
   display: block;
+}
+.landscape-image{
+  padding-top: 15%;
 }
 
 .image-container:hover {
