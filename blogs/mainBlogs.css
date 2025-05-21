@@ -1,0 +1,43 @@
+/*links to sections*/
+.image-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px auto ;
+  padding: 0 10px;
+  max-width: 1200px;
+
+
+
+}
+.rectangular-image {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  display: block;
+}
+
+.image-container:hover {
+  filter: brightness(1.2) drop-shadow(0 0 10px #ffffff);
+  transform: scale(1.02);
+}
+h1{
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  
+  color: white;
+}
+.subtitle{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    
+    color: white;
+}
+main{
+    padding-bottom: 80px;
+}
+
