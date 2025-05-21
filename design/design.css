@@ -1,7 +1,28 @@
 
   
  
-  
+  /*Navigation*/
+  .sub-menu ul {
+  list-style: none; 
+  padding: 0;
+  margin: 0;
+  display: flex; 
+  gap: 0.5rem; 
+  justify-content: center; 
+  align-items: center;
+}
+
+.sub-menu li {
+  display: inline-block; 
+}
+.sub-menu img{
+  width: 80%;
+}
+.sub-menu a:hover {
+  filter: brightness(1.2) drop-shadow(0 0 10px #ffffff);
+  transform: scale(1.02);
+}
+
   body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     color: #000;
@@ -87,7 +108,7 @@ figure img {
 figcaption {
   margin-top: 8px;
   font-size: 0.9rem;
-  color: #afafaf;
+  color: #e3e3e3;
 }
 
 /* REFERENCE LIST  */

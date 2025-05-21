@@ -1,7 +1,42 @@
 
   
  
-  
+  /*Navigation*/
+.sub-menu {
+  display: flex;
+  flex-wrap: wrap; /* allows wrapping to new lines */
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.sub-menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  gap: 1rem;
+}
+
+.sub-menu li {
+  flex: 0 1 auto;
+}
+
+.sub-menu img {
+  max-width: 150px;
+  height: auto;
+  transition: transform 0.3s ease;
+  display: block;
+}
+
+.sub-menu a:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
   body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     color: #000;
@@ -87,7 +122,7 @@ figure img {
 figcaption {
   margin-top: 8px;
   font-size: 0.9rem;
-  color: #afafaf;
+  color: #e3e3e3;
 }
 
 /* REFERENCE LIST  */
