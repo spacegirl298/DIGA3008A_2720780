@@ -107,7 +107,14 @@ figure {
 }
 
 figure img {
-  width: 600px;
+  width: 300px;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+
+}
+.landscape img {
+  width: 500px;
   height: auto;
   border: 1px solid #ccc;
   border-radius: 8px;
