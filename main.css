@@ -13,12 +13,12 @@
   overflow-x: hidden;
   background-position: center;
   color: white;
- 
-  cursor: url("./homepage/cursor.png")16 16 auto;
- 
-  
+  cursor: url("./homepage/cursor.png"), auto;
+  /*for some reason the cursor is not showing up*/
 }
-
+body a:hover, button:hover {
+    cursor: url("./homepage/cursor.png"), pointer;
+}
 .navbar {
     position: sticky;
     top: 0;
