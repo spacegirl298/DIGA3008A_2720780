@@ -197,7 +197,7 @@ main {
   transform: translateY(-50%);
   width: 30px;
   height: 60px;
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: rgba(60, 60, 60, 0.85);
   border: none;
   border-radius: 0 5px 5px 0;
   display: flex;
@@ -214,6 +214,7 @@ main {
   height: 20px;
   transition: opacity 0.3s ease;
   position: absolute;
+
 }
 
 .open-arrow {
@@ -235,6 +236,7 @@ main {
 .toggle-arrow img {
   width: 100%;
   height: auto;
+  color: grey;
 }
 .drawer-toggle:hover {
   background-color: rgba(70, 70, 70, 0.85);
@@ -253,7 +255,7 @@ main {
 }
 
 .side-menu a {
-  color: white;
+  color: rgb(56, 56, 56);
   text-decoration: none;
   font-size: 1.1rem;
   transition: all 0.2s;
@@ -285,10 +287,6 @@ main {
   filter: brightness(1.1) drop-shadow(0 0 5px rgba(255, 255, 255, 0.3));
 }
 
-.active {
-  border: 2px solid white;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-}
 
 @media (max-width: 768px) {
   .blog-btn {

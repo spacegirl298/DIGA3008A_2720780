@@ -43,7 +43,6 @@ function toggleDrawer() {
   
   drawer.classList.toggle('open');
   
-  // Change arrow direction based on state
   if (drawer.classList.contains('open')) {
     toggleButton.innerHTML = '◀';
   } else {
@@ -51,27 +50,13 @@ function toggleDrawer() {
   }
 }
 
-function toggleDrawer() {
-  const drawer = document.getElementById('drawerOverlay');
-  const toggleButton = document.getElementById('drawerToggle');
-  
-  drawer.classList.toggle('open');
-  
-  // Change arrow direction based on state
-  if (drawer.classList.contains('open')) {
-    toggleButton.innerHTML = '◀';
-  } else {
-    toggleButton.innerHTML = '▶';
-  }
-}
 
 function toggleDrawer() {
   const drawer = document.getElementById('drawerOverlay');
   drawer.classList.toggle('open');
-  // The CSS now handles the arrow visibility
+ 
 }
 
-// Close when clicking outside
 document.addEventListener('click', function(event) {
   const drawer = document.getElementById('drawerOverlay');
   const toggleButton = document.getElementById('drawerToggle');
