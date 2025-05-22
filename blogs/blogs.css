@@ -126,9 +126,17 @@ figcaption {
 }
 
 /* REFERENCE LIST  */
-.hentry a {
-  color: #ffffff;
+/*idk why but on some of the blogs the links are not white*/
+.hentry a,
+.hentry a:visited,
+.hentry a:hover,
+.hentry a:active {
+  color: #ffffff !important;
   text-decoration: none;
+}
+
+.hentry a:hover {
+  text-decoration: underline;
 }
 
 .hentry a:hover {
@@ -144,6 +152,7 @@ figcaption {
   margin-top: 1em;
   word-wrap: break-word;
 }
+
 /*switching between blogs*/
 
 main {
