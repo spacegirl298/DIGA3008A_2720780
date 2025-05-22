@@ -142,6 +142,22 @@ html, body {
   padding-top: 20px;
 }
 /*Back to top button*/
+#backToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 60px;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+#backToTopBtn:hover {
+  filter: brightness(1.2) drop-shadow(0 0 10px #ffffff);
+  transform: scale(1.02);
+}
+
 
 @media (max-width: 768px) {
   .navbar ul,
