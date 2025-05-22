@@ -157,7 +157,9 @@ html, body {
   filter: brightness(1.2) drop-shadow(0 0 10px #ffffff);
   transform: scale(1.02);
 }
-
+html {
+  scroll-behavior: smooth;
+}
 
 @media (max-width: 768px) {
   .navbar ul,

@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
       enlargedImg.classList.add("enlarged-img");
 
       const descriptionText = img.dataset.description || img.alt;
-      const firstSentenceMatch = descriptionText.match(/.*?[.?!](\s|$)/); // find first full sentence
+      const firstSentenceMatch = descriptionText.match(/.*?[.?!](\s|$)/);
       const firstSentence = firstSentenceMatch ? firstSentenceMatch[0] : descriptionText;
       const remainingText = descriptionText.replace(firstSentence, "");
 
@@ -40,8 +40,13 @@ document.addEventListener("DOMContentLoaded", () => {
       overlay.appendChild(contentWrapper);
       document.body.appendChild(overlay);
 
+      
+      document.body.classList.add("no-scroll");
+
       overlay.addEventListener("click", () => {
         document.body.removeChild(overlay);
+        
+        document.body.classList.remove("no-scroll");
       });
     });
   });
