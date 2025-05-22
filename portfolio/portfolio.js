@@ -51,3 +51,12 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+//this does not want to work - no clue why
+document.querySelectorAll('.games-section img').forEach(img => {
+  img.addEventListener('mouseenter', () => {
+    img.style.cursor = "url('./images/gameCursor.png'), auto";
+  });
+  img.addEventListener('mouseleave', () => {
+    img.style.cursor = "auto";
+  });
+});

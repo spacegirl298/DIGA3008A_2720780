@@ -27,3 +27,7 @@ window.addEventListener("load", () => {
     }
   }
 });
+/*this is not working - no clue why*/
+window.addEventListener("load", () => {
+  document.body.style.setProperty('cursor', "url('./homepage/cursor.png'), auto", 'important');
+});

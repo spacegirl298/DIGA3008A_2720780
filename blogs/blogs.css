@@ -150,8 +150,21 @@ figcaption {
   margin-top: 1em;
   word-wrap: break-word;
 }
+/*switching between blogs*/
 
+main {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+  min-height: 100vh;
+}
 
+.fade-out {
+  opacity: 0;
+}
+
+.fade-in {
+  opacity: 1;
+}
 
 
  
