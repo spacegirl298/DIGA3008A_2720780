@@ -1,9 +1,9 @@
 /*links to sections*/
 h1{
-  font-size: 50px;
+  font-size: 3rem;
   font-weight: bold;
   text-align: center;
-  
+  font-family: 'Cinzel', serif;
   color: white;
 }
 .image-row {

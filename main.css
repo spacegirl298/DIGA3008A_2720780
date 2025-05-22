@@ -1,12 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  body {
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: url("./homepage/bgImg.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -16,19 +15,20 @@
   cursor: url("./homepage/cursor.png"), auto;
   /*for some reason the cursor is not showing up*/
 }
-body a:hover, button:hover {
-    cursor: url("./homepage/cursor.png"), pointer;
+body a:hover,
+button:hover {
+  cursor: url("./homepage/cursor.png"),  pointer;
 }
 .navbar {
-    position: sticky;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    margin-top: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
 
 .navbar ul {
   list-style: none;
@@ -38,7 +38,6 @@ body a:hover, button:hover {
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.5);
   flex-wrap: wrap;
-  font-family: poppins, sans-serif;
   
 }
 
@@ -46,9 +45,11 @@ nav ul li a {
   color: #ffffff;
   text-decoration: none;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 28px;
   position: relative;
   transition: all 0.3s ease;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 600;
 }
 
 nav ul li a::after {
@@ -60,7 +61,6 @@ nav ul li a::after {
   left: 0;
   bottom: -4px;
   transition: width 0.3s ease;
-  
 }
 
 nav ul li a:hover {
@@ -71,22 +71,25 @@ nav ul li a:hover::after {
   width: 100%;
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-  }
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
 .active {
   color: #ffffff;
-  
+
   font-weight: bold;
-  font-size: 25px;
+  font-size: 28px;
   position: relative;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 600;
 }
 .active img {
-  width: 30px; 
+  width: 30px;
   height: auto;
-  margin-left: 8px; 
-  vertical-align: middle; 
+  margin-left: 8px;
+  vertical-align: middle;
 }
 
 .navline {
@@ -101,15 +104,15 @@ html, body {
 /*footer*/
 
 .footer-nav {
-    position: sticky;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    margin-top: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
 
 .footer-nav ul {
   list-style: none;
@@ -120,15 +123,11 @@ html, body {
   background-color: rgba(0, 0, 0, 0.5);
   flex-wrap: wrap;
   font-family: poppins, sans-serif;
-  
 }
 
-
-.footer-nav li img{
+.footer-nav li img {
   width: 30px;
 }
-
-
 
 .footerline {
   position: absolute;
@@ -138,7 +137,7 @@ html, body {
   width: 90%;
   height: auto;
 }
-#About-Me{
+#About-Me {
   padding-top: 20px;
 }
 /*Back to top button*/
@@ -161,19 +160,19 @@ html {
   scroll-behavior: smooth;
 }
 .hamburger {
-    display: none; /* Hidden by default on desktop */
-    cursor: pointer;
-    padding: 10px;
+  display: none; 
+  cursor: pointer;
+  padding: 10px;
 }
 
 .bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: #ffffff; /* Change color to match your design */
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #ffffff;
 }
 
 @media (max-width: 768px) {
@@ -198,39 +197,37 @@ html {
   .navline,
   .footerline {
     width: 95%;
-    
   }
 
   .footer-nav li img {
     width: 24px;
-
   }
-.hamburger {
-        display: block;
-        text-align: left;
-    }
-    
-    .nav-menu {
-        position: fixed;
-        left: -100%;
-        top: 70px; 
-        gap: 0;
-        flex-direction: column;
-        background-color: #fff; 
-        width: 100%;
-        text-align: center;
-        transition: 0.3s;
-        padding: 0;
-    }
-    
-    .nav-menu.active {
-        left: 0;
-    }
-    .navline{
-      display:none;
-    }
-    
-    .nav-menu li {
-        margin: 16px 0;
-    }
+  .hamburger {
+    display: block;
+    text-align: left;
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    padding: 0;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+  .navline {
+    display: none;
+  }
+
+  .nav-menu li {
+    margin: 16px 0;
+  }
 }

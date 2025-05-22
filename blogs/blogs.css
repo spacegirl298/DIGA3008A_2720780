@@ -34,7 +34,7 @@
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #000;
   margin: 0;
   padding: 0;
@@ -55,8 +55,6 @@ body {
   flex: 1;
   max-width: 800px;
   margin: 0 auto;
-
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   color: #ffffff;
   margin-bottom: 9rem;
@@ -69,18 +67,21 @@ body {
   text-align: center;
   margin-bottom: 60px;
   color: #ffffff;
+   font-family: 'Cinzel', serif;
 }
 
 /* ARTICLE CONTENT */
 .hentry h1 {
   font-size: 2rem;
-
+  font-family: 'Cinzel', serif;
   color: #ffffff;
 }
 
 .hentry h2 {
   font-size: 1.5rem;
   margin-top: 1.5em;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 600;
   color: #ffffff;
   border-bottom: 2px solid #ccc;
   padding-bottom: 5px;
