@@ -7,7 +7,7 @@ document.querySelectorAll('.menu-link').forEach(link => {
     }
   });
 });
-/*still leaving a flash for transitioing between blogs*/
+
 document.addEventListener("DOMContentLoaded", () => {
   const links = document.querySelectorAll(".menu-link");
   const mainContent = document.querySelector("main");

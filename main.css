@@ -160,6 +160,21 @@ html, body {
 html {
   scroll-behavior: smooth;
 }
+.hamburger {
+    display: none; /* Hidden by default on desktop */
+    cursor: pointer;
+    padding: 10px;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #ffffff; /* Change color to match your design */
+}
 
 @media (max-width: 768px) {
   .navbar ul,
@@ -190,5 +205,32 @@ html {
     width: 24px;
 
   }
-
+.hamburger {
+        display: block;
+        text-align: left;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px; 
+        gap: 0;
+        flex-direction: column;
+        background-color: #fff; 
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        padding: 0;
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+    .navline{
+      display:none;
+    }
+    
+    .nav-menu li {
+        margin: 16px 0;
+    }
 }

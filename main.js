@@ -31,3 +31,22 @@ window.addEventListener("load", () => {
 window.addEventListener("load", () => {
   document.body.style.setProperty('cursor', "url('./homepage/cursor.png'), auto", 'important');
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+    
+    hamburger.addEventListener('click', function() {
+        // Toggle the 'active' class on both hamburger and navMenu
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    });
+    
+    // Close menu when a link is clicked (optional)
+    document.querySelectorAll('.nav-menu li a').forEach(link => {
+        link.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        });
+    });
+});
