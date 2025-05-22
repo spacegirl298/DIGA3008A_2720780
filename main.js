@@ -37,12 +37,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const navMenu = document.querySelector('.nav-menu');
     
     hamburger.addEventListener('click', function() {
-        // Toggle the 'active' class on both hamburger and navMenu
+        
         hamburger.classList.toggle('active');
         navMenu.classList.toggle('active');
     });
     
-    // Close menu when a link is clicked (optional)
+    
     document.querySelectorAll('.nav-menu li a').forEach(link => {
         link.addEventListener('click', () => {
             hamburger.classList.remove('active');

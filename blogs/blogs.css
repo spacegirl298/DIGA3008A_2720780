@@ -1,7 +1,6 @@
 /*Sub Navigation*/
 .submenu {
   justify-content: center;
-
   padding: 1rem;
   margin: 0 auto;
   max-width: 2000px;
@@ -34,7 +33,7 @@
 }
 
 body {
-   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #000;
   margin: 0;
   padding: 0;
@@ -67,13 +66,13 @@ body {
   text-align: center;
   margin-bottom: 60px;
   color: #ffffff;
-   font-family: 'Cinzel', serif;
+  font-family: "Cinzel", serif;
 }
 
 /* ARTICLE CONTENT */
 .hentry h1 {
   font-size: 2rem;
-  font-family: 'Cinzel', serif;
+  font-family: "Cinzel", serif;
   color: #ffffff;
 }
 
@@ -127,7 +126,6 @@ figcaption {
 }
 
 /* REFERENCE LIST  */
-/*idk why but on some of the blogs the links are not white*/
 .hentry a,
 .hentry a:visited,
 .hentry a:hover,
@@ -224,7 +222,6 @@ main {
   height: 20px;
   transition: opacity 0.3s ease;
   position: absolute;
-
 }
 
 .open-arrow {
@@ -296,7 +293,6 @@ main {
   transform: scale(1.05);
   filter: brightness(1.1) drop-shadow(0 0 5px rgba(255, 255, 255, 0.3));
 }
-
 
 @media (max-width: 768px) {
   .blog-btn {

@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
         description.appendChild(paragraph);
       }
 
-      // Find the link in the container
+      
       const link = container.querySelector("a");
       if (link) {
         const lightboxLink = document.createElement("a");
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Game cursor functionality
+  //this does not want to work. I dont know why
   document.querySelectorAll('.games-section img').forEach(img => {
     img.addEventListener('mouseenter', () => {
       img.style.cursor = "url('./images/gameCursor.png'), auto";
