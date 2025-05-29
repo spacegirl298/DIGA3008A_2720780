@@ -6,18 +6,18 @@
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: url("./homepage/bgImg.jpg") no-repeat;
+  background: url("./homeImages/bgImg.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
   overflow-x: hidden;
   background-position: center;
   color: white;
-  cursor: url("./homepage/cursor.png"), auto;
+  cursor: url("./homeImages/cursor.png"), auto;
   /*for some reason the cursor is not showing up*/
 }
 body a:hover,
 button:hover {
-  cursor: url("./homepage/cursor.png"),  pointer;
+  cursor: url("./homeImages/cursor.png"),  pointer;
 }
 .navbar {
   position: sticky;
