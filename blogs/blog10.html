@@ -12,21 +12,20 @@
     <link rel="stylesheet" href="blogs.css" />
     <link rel="stylesheet" href="../main.css" />
     <link rel="icon" href="../homeImages/logo.png" type="image/x-icon" />
-    <script src = "blogs.js"></script>
-    <script src = "../main.js"></script>
+    <script src="blogs.js"></script>
+    <script src="../main.js"></script>
     <title>Blog</title>
   </head>
   <body>
     <header>
       <nav class="navbar">
-        <div class = "hamburger">
+        <div class="hamburger">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
         </div>
-        <ul class = "nav-menu">
-          <li><a href ="../index.html">Home</a>
-          </li>
+        <ul class="nav-menu">
+          <li><a href="../index.html">Home</a></li>
           <li><a href="../portfolio/portfolio.html">Portfolio</a></li>
           <li><a href="../blogs/mainBlogs.html">Blogs</a></li>
           <li><a href="../essays/essays.html">Essays</a></li>
@@ -41,149 +40,258 @@
       </nav>
     </header>
     <main>
-       <div id="drawerOverlay" class="drawer-overlay">
-  <div class="drawer-content">
-  <div class="side-menu">
-  <ul>
-    <li><a href="blog1.html"><img src="./images/blog1Menu.png" alt="Blog 1 Button" class="blog-btn" class = active></a></li>
-     <li><a href="blog2.html"><img src="./images/blog2Menu.png" alt="Blog 2 Button" class="blog-btn"></a></li>
-     <li><a href="blog3.html"><img src="./images/blog3Menu.png" alt="Blog 3 Button" class="blog-btn"></a></li>
-    <li><a href="blog4.html"><img src="./images/blog4Menu.png" alt="Blog 4 Button" class="blog-btn"></a></li>
-    <li><a href="blog5.html"><img src="./images/blog5Menu.png" alt="Blog 5 Button" class="blog-btn"></a></li>
-    <li><a href="blog6.html"><img src="./images/blog6Menu.png" alt="Blog 6 Button" class="blog-btn"></a></li>
-    <li><a href="blog7.html"><img src="./images/blog7Menu.png" alt="Blog 7 Button" class="blog-btn"></a></li>
-    <li><a href="blog8.html"><img src="./images/blog8Menu.png" alt="Blog 8 Button" class="blog-btn"></a></li>
-    <li><a href="blog9.html"><img src="./images/blog9Menu.png" alt="Blog 9 Button" class="blog-btn"></a></li>
-    <li><a href="blog10.html"><img src="./images/blog10Menu.png" alt="Blog 10 Button" class="blog-btn"></a></li>
-    <li><a href="blog11.html"><img src="./images/blog11Menu.png" alt="Blog 11 Button" class="blog-btn"></a></li>
-      </ul>
-    </div>
-    <button id="drawerToggle" class="drawer-toggle" onclick="toggleDrawer()">
-  <img src="./images/openMenu.png" class="toggle-arrow open-arrow" alt="Open menu">
-  <img src="./images/closeMenu.png" class="toggle-arrow close-arrow" alt="Close menu">
-</button>
-  </div>
-</div>
-       <article class = "submenu">
+      <div id="drawerOverlay" class="drawer-overlay">
+        <div class="drawer-content">
+          <div class="side-menu">
+            <ul>
+              <li>
+                <a href="blog1.html"
+                  ><img
+                    src="./images/blog1Menu.png"
+                    alt="Blog 1 Button"
+                    class="blog-btn"
+                    class="active"
+                /></a>
+              </li>
+              <li>
+                <a href="blog2.html"
+                  ><img
+                    src="./images/blog2Menu.png"
+                    alt="Blog 2 Button"
+                    class="blog-btn"
+                /></a>
+              </li>
+              <li>
+                <a href="blog3.html"
+                  ><img
+                    src="./images/blog3Menu.png"
+                    alt="Blog 3 Button"
+                    class="blog-btn"
+                /></a>
+              </li>
+              <li>
+                <a href="blog4.html"
+                  ><img
+                    src="./images/blog4Menu.png"
+                    alt="Blog 4 Button"
+                    class="blog-btn"
+                /></a>
+              </li>
+              <li>
+                <a href="blog5.html"
+                  ><img
+                    src="./images/blog5Menu.png"
+                    alt="Blog 5 Button"
+                    class="blog-btn"
+                /></a>
+              </li>
+              <li>
+                <a href="blog6.html"
+                  ><img
+                    src="./images/blog6Menu.png"
+                    alt="Blog 6 Button"
+                    class="blog-btn"
+                /></a>
+              </li>
+              <li>
+                <a href="blog7.html"
+                  ><img
+                    src="./images/blog7Menu.png"
+                    alt="Blog 7 Button"
+                    class="blog-btn"
+                /></a>
+              </li>
+              <li>
+                <a href="blog8.html"
+                  ><img
+                    src="./images/blog8Menu.png"
+                    alt="Blog 8 Button"
+                    class="blog-btn"
+                /></a>
+              </li>
+              <li>
+                <a href="blog9.html"
+                  ><img
+                    src="./images/blog9Menu.png"
+                    alt="Blog 9 Button"
+                    class="blog-btn"
+                /></a>
+              </li>
+              <li>
+                <a href="blog10.html"
+                  ><img
+                    src="./images/blog10Menu.png"
+                    alt="Blog 10 Button"
+                    class="blog-btn"
+                /></a>
+              </li>
+              <li>
+                <a href="blog11.html"
+                  ><img
+                    src="./images/blog11Menu.png"
+                    alt="Blog 11 Button"
+                    class="blog-btn"
+                /></a>
+              </li>
+            </ul>
+          </div>
+          <button
+            id="drawerToggle"
+            class="drawer-toggle"
+            onclick="toggleDrawer()"
+          >
+            <img
+              src="./images/openMenu.png"
+              class="toggle-arrow open-arrow"
+              alt="Open menu"
+            />
+            <img
+              src="./images/closeMenu.png"
+              class="toggle-arrow close-arrow"
+              alt="Close menu"
+            />
+          </button>
+        </div>
+      </div>
+      <article class="submenu">
         <ul>
-          <li><a class = "menu-link" href="blog9.html"><img src = "./images/previousBtn.png" alt = "framed text that reads previous"/></a></li>
-          <li><a class = "menu-link" href="blog11.html"><img src = "./images/nextBtn.png" alt = "framed text that reads next"/></a></li>
+          <li>
+            <a class="menu-link" href="blog9.html"
+              ><img
+                src="./images/previousBtn.png"
+                alt="framed text that reads previous"
+            /></a>
+          </li>
+          <li>
+            <a class="menu-link" href="blog11.html"
+              ><img
+                src="./images/nextBtn.png"
+                alt="framed text that reads next"
+            /></a>
+          </li>
         </ul>
       </article>
-      <article class = "text">
-      <section class = "intro">
-        <h1 class="entry-title">Blog 10</h1>
-      </section>
-      <article class="hentry">
-        <div class = "e-content">
-        <p>
-          Published by
-          <a
-            class="p-author"
-            href="https://www.linkedin.com/in/jessica-jardim?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
-            target="_blank"
-          >
-            Jessica Jardim</a
-          >
-        </p>
-        <p>
-          <time class="dt-published" datetime="2025-05-05"
-            >05<sup>th</sup>May 2025</time
-          >
-        </p>
-        <h1>Decolonizing Code: Accountability in the Age of Algorithms</h1>
-        <div class="e-content">
-          <h2>Decolonizing Code</h2>
-          <p>
-            When writing code, we’re not just creating functional websites, we
-            are embedding biases and power structures into the systems that
-            shape society. After reading Mohamed and Berhane’s’ readings, it
-            forced me to reflect on how my own work could perpetuate
-            coloniality.
-          </p>
-          <p>
-            Mohamed highlights in his reading, “Decolonial AI: Decolonial Theory
-            as Sociotechnical Foresight in Artificial Intelligence,” how AI
-            systems often replicate colonial power structure by centring
-            Westerns norms as universal. For example, how facial recognition
-            tools are predominantly coded and tested on light-skinned users and
-            causes it to fail for darker skin users. (Mohamed et. al, 2020,
-            pg.9) This is a design problem rooted in racism and exclusivity. It
-            prioritizes a certain group of people and marginalizes a huge
-            demographic. To avoid this in my own work, I need to ask myself: Who
-            is represented here? I believe there is value in using existing code
-            and datasets as resources, but with critical awareness. While using
-            available tools, I must actively work to avoid replicating the same
-            exclusionary practices prevalent in Western tech.
-          </p>
-          <p>
-            In Birhane’s reading, “Algorithmic Colonization of Africa,” he
-            dismantles the myth of neutral AI. He highlights South Africa’s
-            Vumacam surveillance system as an example. This system labels Black
-            manual labourers as “suspicious” by default (Birhanne, 2020, pg.18).
-            Birhane states “how we see the world […] is reflected in the
-            algorithmic models we build” (Birhane, 2020, pg.17). Algorithms
-            don’t just process data, they encode the biases and worldviews of
-            their creators. This forces me to confront my own blind spots as a
-            creator. To avoid perpetuating colonial patterns in tech I need to
-            document the biases and limitations of my code transparently.
-          </p>
-          <p>
-            Mohamed’s concept of “reverse tutelage” (Mohamed et.al, 2020, pg.16)
-            fundamentally shifts how we approach the development of technology,
-            rather than imposing solutions on communities, we must learn from
-            their lived experiences. When developing software for any community,
-            I commit to involving community members as equal collaborators in
-            decision making, not just as end-users.
-          </p>
-          <p>
-            Moving forward in my career as a creator I need to recognise that
-            decolonising code isn’t about guilt, it’s about accountability. As
-            Mohamed urges, we need a “critical technical practice” (Mohamed et.
-            al, 2020, pg. 14) that bridges activism and coding. For me, this
-            means learning from postcolonial critiques and advocating for
-            policies that protect against algorithmic exploitation.
-          </p>
-          <h2>Incorporating JavaScript</h2>
-          <p>
-            I have not implemented much JavaScript at the moment as I have been
-            focusing on redesigning my website, making sure it reflects my
-            personality and artistic style, which I feel like my original
-            website lacked. I’m slowly implementing JavaScript to enhance the
-            experience without overwhelming users. I ma not selectively adding
-            subtle interactions to enhance usability. Examples of these
-            interactions is smooth scrolling, a progress indictor and a
-            back-to-top button.
-          </p>
-          <h2>References</h2>
-          <p>
-            <a
-              href="https://doi.org/10.2966/scrip.170220.389"
-              class="url"
-              target="_blank"
-            >
-              Birhane, A. (2020) ‘Algorithmic Colonization of Africa’,
-              SCRIPT-ed, 17(2), pp. 389–409. Available at:
-              https://doi.org/10.2966/scrip.170220.389.
-            </a>
-            <br />
-            <a
-              href="http://dx.doi.org/10.1007/s13347-020-00405-8"
-              class="url"
-              target="_blank"
-            >
-              Shakir, M. et al. (2020) ‘Decolonial AI: Decolonial Theory as
-              Sociotechnical Foresight in Artificial Intelligence’, Institute
-              for Internet & the Just Society, 33(4), pp. 659–684. Available at:
-              http://dx.doi.org/10.1007/s13347-020-00405-8.
-            </a>
-          </p>
-        </div>
+      <article class="text">
+        <section class="intro">
+          <h1 class="entry-title">Blog 10</h1>
+        </section>
+        <article class="hentry">
+          <div class="e-content">
+            <p>
+              Published by
+              <a
+                class="p-author"
+                href="https://www.linkedin.com/in/jessica-jardim?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                target="_blank"
+              >
+                Jessica Jardim</a
+              >
+            </p>
+            <p>
+              <time class="dt-published" datetime="2025-05-05"
+                >05<sup>th</sup>May 2025</time
+              >
+            </p>
+            <h1>Decolonizing Code: Accountability in the Age of Algorithms</h1>
+
+            <h2>Decolonizing Code</h2>
+            <p>
+              When writing code, we’re not just creating functional websites, we
+              are embedding biases and power structures into the systems that
+              shape society. After reading Mohamed and Berhane’s’ readings, it
+              forced me to reflect on how my own work could perpetuate
+              coloniality.
+            </p>
+            <p>
+              Mohamed highlights in his reading, “Decolonial AI: Decolonial
+              Theory as Sociotechnical Foresight in Artificial Intelligence,”
+              how AI systems often replicate colonial power structure by
+              centring Westerns norms as universal. For example, how facial
+              recognition tools are predominantly coded and tested on
+              light-skinned users and causes it to fail for darker skin users.
+              (Mohamed et. al, 2020, pg.9) This is a design problem rooted in
+              racism and exclusivity. It prioritizes a certain group of people
+              and marginalizes a huge demographic. To avoid this in my own work,
+              I need to ask myself: Who is represented here? I believe there is
+              value in using existing code and datasets as resources, but with
+              critical awareness. While using available tools, I must actively
+              work to avoid replicating the same exclusionary practices
+              prevalent in Western tech.
+            </p>
+            <p>
+              In Birhane’s reading, “Algorithmic Colonization of Africa,” he
+              dismantles the myth of neutral AI. He highlights South Africa’s
+              Vumacam surveillance system as an example. This system labels
+              Black manual labourers as “suspicious” by default (Birhanne, 2020,
+              pg.18). Birhane states “how we see the world […] is reflected in
+              the algorithmic models we build” (Birhane, 2020, pg.17).
+              Algorithms don’t just process data, they encode the biases and
+              worldviews of their creators. This forces me to confront my own
+              blind spots as a creator. To avoid perpetuating colonial patterns
+              in tech I need to document the biases and limitations of my code
+              transparently.
+            </p>
+            <p>
+              Mohamed’s concept of “reverse tutelage” (Mohamed et.al, 2020,
+              pg.16) fundamentally shifts how we approach the development of
+              technology, rather than imposing solutions on communities, we must
+              learn from their lived experiences. When developing software for
+              any community, I commit to involving community members as equal
+              collaborators in decision making, not just as end-users.
+            </p>
+            <p>
+              Moving forward in my career as a creator I need to recognise that
+              decolonising code isn’t about guilt, it’s about accountability. As
+              Mohamed urges, we need a “critical technical practice” (Mohamed
+              et. al, 2020, pg. 14) that bridges activism and coding. For me,
+              this means learning from postcolonial critiques and advocating for
+              policies that protect against algorithmic exploitation.
+            </p>
+            <h2>Incorporating JavaScript</h2>
+            <p>
+              I have not implemented much JavaScript at the moment as I have
+              been focusing on redesigning my website, making sure it reflects
+              my personality and artistic style, which I feel like my original
+              website lacked. I’m slowly implementing JavaScript to enhance the
+              experience without overwhelming users. I ma not selectively adding
+              subtle interactions to enhance usability. Examples of these
+              interactions is smooth scrolling, a progress indictor and a
+              back-to-top button.
+            </p>
+            <h2>References</h2>
+            <p>
+              <a
+                href="https://doi.org/10.2966/scrip.170220.389"
+                class="url"
+                target="_blank"
+              >
+                Birhane, A. (2020) ‘Algorithmic Colonization of Africa’,
+                SCRIPT-ed, 17(2), pp. 389–409. Available at:
+                https://doi.org/10.2966/scrip.170220.389.
+              </a>
+              <br />
+              <a
+                href="http://dx.doi.org/10.1007/s13347-020-00405-8"
+                class="url"
+                target="_blank"
+              >
+                Shakir, M. et al. (2020) ‘Decolonial AI: Decolonial Theory as
+                Sociotechnical Foresight in Artificial Intelligence’, Institute
+                for Internet & the Just Society, 33(4), pp. 659–684. Available
+                at: http://dx.doi.org/10.1007/s13347-020-00405-8.
+              </a>
+            </p>
+          </div>
+        </article>
       </article>
-      </article>
-      <img id = "backToTopBtn" src = "../homeImages/topButton.png" alt = "back to top button" title = "Go to top" />
+      <img
+        id="backToTopBtn"
+        src="../homeImages/topButton.png"
+        alt="back to top button"
+        title="Go to top"
+      />
     </main>
-   <footer>
+    <footer>
       <nav class="footer-nav">
         <ul>
           <li>

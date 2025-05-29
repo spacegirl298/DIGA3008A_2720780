@@ -8,25 +8,24 @@
       name="description"
       content="Blog 1 about experience of setting up Gihtub by Jessica Jardim"
     />
-   <link rel="stylesheet" href="../layout.css" />
+    <link rel="stylesheet" href="../layout.css" />
     <link rel="stylesheet" href="blogs.css" />
     <link rel="stylesheet" href="../main.css" />
     <link rel="icon" href="../homeImages/logo.png" type="image/x-icon" />
-    <script src = "blogs.js"></script>
-    <script src = "../main.js"></script>
+    <script src="blogs.js"></script>
+    <script src="../main.js"></script>
     <title>Blog 7</title>
   </head>
   <body>
     <header>
       <nav class="navbar">
-        <div class = "hamburger">
+        <div class="hamburger">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
         </div>
-        <ul class = "nav-menu">
-          <li><a href ="../index.html">Home</a>
-          </li>
+        <ul class="nav-menu">
+          <li><a href="../index.html">Home</a></li>
           <li><a href="../portfolio/portfolio.html">Portfolio</a></li>
           <li><a href="../blogs/mainBlogs.html">Blogs</a></li>
           <li><a href="../essays/essays.html">Essays</a></li>
@@ -41,140 +40,277 @@
       </nav>
     </header>
     <main>
-       <div id="drawerOverlay" class="drawer-overlay">
-  <div class="drawer-content">
-  <div class="side-menu">
-  <ul>
-    <li><a href="blog1.html"><img src="./images/blog1Menu.png" alt="Blog 1 Button" class="blog-btn" class = active></a></li>
-     <li><a href="blog2.html"><img src="./images/blog2Menu.png" alt="Blog 2 Button" class="blog-btn"></a></li>
-     <li><a href="blog3.html"><img src="./images/blog3Menu.png" alt="Blog 3 Button" class="blog-btn"></a></li>
-    <li><a href="blog4.html"><img src="./images/blog4Menu.png" alt="Blog 4 Button" class="blog-btn"></a></li>
-    <li><a href="blog5.html"><img src="./images/blog5Menu.png" alt="Blog 5 Button" class="blog-btn"></a></li>
-    <li><a href="blog6.html"><img src="./images/blog6Menu.png" alt="Blog 6 Button" class="blog-btn"></a></li>
-    <li><a href="blog7.html"><img src="./images/blog7Menu.png" alt="Blog 7 Button" class="blog-btn"></a></li>
-    <li><a href="blog8.html"><img src="./images/blog8Menu.png" alt="Blog 8 Button" class="blog-btn"></a></li>
-    <li><a href="blog9.html"><img src="./images/blog9Menu.png" alt="Blog 9 Button" class="blog-btn"></a></li>
-    <li><a href="blog10.html"><img src="./images/blog10Menu.png" alt="Blog 10 Button" class="blog-btn"></a></li>
-    <li><a href="blog11.html"><img src="./images/blog11Menu.png" alt="Blog 11 Button" class="blog-btn"></a></li>
-      </ul>
-    </div>
-    <button id="drawerToggle" class="drawer-toggle" onclick="toggleDrawer()">
-  <img src="./images/openMenu.png" class="toggle-arrow open-arrow" alt="Open menu">
-  <img src="./images/closeMenu.png" class="toggle-arrow close-arrow" alt="Close menu">
-</button>
-  </div>
-</div>
-       <article class = "submenu">
+      <div id="drawerOverlay" class="drawer-overlay">
+        <div class="drawer-content">
+          <div class="side-menu">
+            <ul>
+              <li>
+                <a href="blog1.html"
+                  ><img
+                    src="./images/blog1Menu.png"
+                    alt="Blog 1 Button"
+                    class="blog-btn"
+                    class="active"
+                /></a>
+              </li>
+              <li>
+                <a href="blog2.html"
+                  ><img
+                    src="./images/blog2Menu.png"
+                    alt="Blog 2 Button"
+                    class="blog-btn"
+                /></a>
+              </li>
+              <li>
+                <a href="blog3.html"
+                  ><img
+                    src="./images/blog3Menu.png"
+                    alt="Blog 3 Button"
+                    class="blog-btn"
+                /></a>
+              </li>
+              <li>
+                <a href="blog4.html"
+                  ><img
+                    src="./images/blog4Menu.png"
+                    alt="Blog 4 Button"
+                    class="blog-btn"
+                /></a>
+              </li>
+              <li>
+                <a href="blog5.html"
+                  ><img
+                    src="./images/blog5Menu.png"
+                    alt="Blog 5 Button"
+                    class="blog-btn"
+                /></a>
+              </li>
+              <li>
+                <a href="blog6.html"
+                  ><img
+                    src="./images/blog6Menu.png"
+                    alt="Blog 6 Button"
+                    class="blog-btn"
+                /></a>
+              </li>
+              <li>
+                <a href="blog7.html"
+                  ><img
+                    src="./images/blog7Menu.png"
+                    alt="Blog 7 Button"
+                    class="blog-btn"
+                /></a>
+              </li>
+              <li>
+                <a href="blog8.html"
+                  ><img
+                    src="./images/blog8Menu.png"
+                    alt="Blog 8 Button"
+                    class="blog-btn"
+                /></a>
+              </li>
+              <li>
+                <a href="blog9.html"
+                  ><img
+                    src="./images/blog9Menu.png"
+                    alt="Blog 9 Button"
+                    class="blog-btn"
+                /></a>
+              </li>
+              <li>
+                <a href="blog10.html"
+                  ><img
+                    src="./images/blog10Menu.png"
+                    alt="Blog 10 Button"
+                    class="blog-btn"
+                /></a>
+              </li>
+              <li>
+                <a href="blog11.html"
+                  ><img
+                    src="./images/blog11Menu.png"
+                    alt="Blog 11 Button"
+                    class="blog-btn"
+                /></a>
+              </li>
+            </ul>
+          </div>
+          <button
+            id="drawerToggle"
+            class="drawer-toggle"
+            onclick="toggleDrawer()"
+          >
+            <img
+              src="./images/openMenu.png"
+              class="toggle-arrow open-arrow"
+              alt="Open menu"
+            />
+            <img
+              src="./images/closeMenu.png"
+              class="toggle-arrow close-arrow"
+              alt="Close menu"
+            />
+          </button>
+        </div>
+      </div>
+      <article class="submenu">
         <ul>
-          <li><a class = "menu-link" href="blog6.html"><img src = "./images/previousBtn.png" alt = "framed text that reads previous"/></a></li>
-          <li><a class = "menu-link" href="blog8.html"><img src = "./images/nextBtn.png" alt = "framed text that reads next"/></a></li>
+          <li>
+            <a class="menu-link" href="blog6.html"
+              ><img
+                src="./images/previousBtn.png"
+                alt="framed text that reads previous"
+            /></a>
+          </li>
+          <li>
+            <a class="menu-link" href="blog8.html"
+              ><img
+                src="./images/nextBtn.png"
+                alt="framed text that reads next"
+            /></a>
+          </li>
         </ul>
       </article>
-      <article class = "text">
-      <section class = "intro">
-        <h1 class="entry-title">Blog 7</h1>
+      <article class="text">
+        <section class="intro">
+          <h1 class="entry-title">Blog 7</h1>
         </section>
-      <article class="hentry">
-        <div class = "e-content">
-        <p>
-          Published by
-          <a
-            class="p-author"
-            href="https://www.linkedin.com/in/jessica-jardim?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
-            target="_blank"
-          >
-            Jessica Jardim</a
-          >
-        </p>
-        <p>
-          <time class="dt-published" datetime="2025-04-21"
-            >21<sup>st</sup>April 2025</time
-          >
-        </p>
-        <h1>Disconnected & Disadvantaged: Justice in a Digital World</h1>
-        <div class="e-content">
-          <h2> “The Need for Global Internet Connectivity” – Claire Daniolou</h2>
-          <p>
-            This blog will be a critical engagement of Claire Daniolou’s reading. 
-            In her reading she argues that internet access is a necessity, she frames
-             it as a tool to reduce marginalization, foster economic, educational and 
-             cultural growth.
-          </p>
-          <h3>The Digital Divide</h3>
-          <p>
-            The internet is not merely just about entertainment. It is a gateway to
-             education, healthcare, and economic opportunity. Daniolou points out that 
-             rural areas often face a “rural penalty” (Daniolou, 2020, pg.2), which is 
-             an isolation that stifles cultural and economical growth. Without access to 
-             the internet, these communities miss out on everything that the digital world 
-             provides. Danilou warns that “technological illiteracy can be even more harmful 
-             than no internet at all.” (Daniolou, 2020, pg.3) This means that handing out laptops 
-             and smartphones is not enough. People need to be educated on how to use it. 
-          </p>
-          <h3>Connectivity as a Catalyst</h3>
-          <p>
-            Initiatives like the EU’s digital strategies and GoGlobal’s e-commerce programs are
-             showing just how transformative internet access can be. As Daniolou puts it, broadband enables
-              “fast and efficient communication with anyone around the globe” (Danioloi, 2020, pg. 2),
-               breaking down barriers that once kept rural entrepreneurs, students, and communities isolated.
-          </p>
-          <h3>Dark Side of the Internet</h3>
-          <p>
-            Daniolou notes that “online information can often be misleading” (Danioloi, 2020, pg. 2), 
-            stressing the need for critical thinking. The internet contains misinformation, cultural homogenization,
-             and even online radicalization are real dangers. 
-          </p>
-          <h3>Moving Forward</h3>
-          <p>
-            A solution for these issues is that we need universal access and we need digital literacy programs to
-             ensure people can navigate the internet safely. We also need address ethical issues in the internet world, 
-             ensuring that tech serves humanity and not the other way around. 
-          </p>
-          <h2>
-            “Internet Access is a Fundamental Right. Especially, Amidst a Pandemic” – Spyros Kasapis
-          </h2>
-          <p>
-            This blog will engage with Kasapis’s reading. The COVID-19 pandemic did not just disrupt our lives, it exposed 
-            inequalities in the digital realm. Spyros argues that the internet turned from a convenience into a necessity. 
-          </p>
-          <h3>Digital Divide</h3>
-          <p>
-            Everybody was locked in their houses, and their only access to communication with the outside world was through
-             the internet. University, schools and workplaces went online, so that people did not lose this time. Kasapis 
-             highlights in her reading how lockdown forced education, work, and commerce online, leaving those without 
-             internet access to be left out and lacking tools. The pandemic didn’t create this divide, it just made it 
-             impossible to ignore.
-          </p>
-          <h3>Is Internet Access a Human Right?</h3>
-          <p>
-            Some people argue the internet is a tool to exercise, while others declare it is a fundamental right itself.
-             I personally feel like internet access is a human right, because it is a gateway to modern life. People need
-              it for education, jobs, healthcare, and even social connections, which is essential for opportunities. 
-              The pandemic proved this, when everything moved online, those without access were left behind, deepening inequality.
-          </p>
-          <h3>Final Thoughts</h3>
-          <p>
-            The pandemic proved internet access is not a luxury, it is a necessity for the digital age. Whether we classify 
-            it as a right or a utility, the stakes are the same, exclusion fuels inequality. 
-          </p>
-          <h2>References</h2>
-          <p>
-            <a href="https://www.internetjustsociety.org/the-need-for-global-internet-connectivity" class="url" target="_blank">Daniolou, C. (2020). The Need for Global Internet Connectivity.
-               [online] www.internetjustsociety.org. Available at: https://www.internetjustsociety.org/the-need-for-global-internet-connectivity. </a>
-            <br />
-          </p>
-          <p>
-            <a href="https://www.internetjustsociety.org/internet-access-is-a-fundamental-rights-especially-amidst-a-pandemic" class="url" target="_blank">www.internetjustsociety.org. (2020). Internet Access is a Fundamental Right. [online] Available at: https://www.internetjustsociety.org/internet-access-is-a-fundamental-rights-especially-amidst-a-pandemic.
+        <article class="hentry">
+          <div class="e-content">
+            <p>
+              Published by
+              <a
+                class="p-author"
+                href="https://www.linkedin.com/in/jessica-jardim?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                target="_blank"
+              >
+                Jessica Jardim</a
+              >
+            </p>
+            <p>
+              <time class="dt-published" datetime="2025-04-21"
+                >21<sup>st</sup>April 2025</time
+              >
+            </p>
+            <h1>Disconnected & Disadvantaged: Justice in a Digital World</h1>
 
-‌</a>
-            <br />
-          </p>
-        </div>
+            <h2>
+              “The Need for Global Internet Connectivity” – Claire Daniolou
+            </h2>
+            <p>
+              This blog will be a critical engagement of Claire Daniolou’s
+              reading. In her reading she argues that internet access is a
+              necessity, she frames it as a tool to reduce marginalization,
+              foster economic, educational and cultural growth.
+            </p>
+            <h3>The Digital Divide</h3>
+            <p>
+              The internet is not merely just about entertainment. It is a
+              gateway to education, healthcare, and economic opportunity.
+              Daniolou points out that rural areas often face a “rural penalty”
+              (Daniolou, 2020, pg.2), which is an isolation that stifles
+              cultural and economical growth. Without access to the internet,
+              these communities miss out on everything that the digital world
+              provides. Danilou warns that “technological illiteracy can be even
+              more harmful than no internet at all.” (Daniolou, 2020, pg.3) This
+              means that handing out laptops and smartphones is not enough.
+              People need to be educated on how to use it.
+            </p>
+            <h3>Connectivity as a Catalyst</h3>
+            <p>
+              Initiatives like the EU’s digital strategies and GoGlobal’s
+              e-commerce programs are showing just how transformative internet
+              access can be. As Daniolou puts it, broadband enables “fast and
+              efficient communication with anyone around the globe” (Danioloi,
+              2020, pg. 2), breaking down barriers that once kept rural
+              entrepreneurs, students, and communities isolated.
+            </p>
+            <h3>Dark Side of the Internet</h3>
+            <p>
+              Daniolou notes that “online information can often be misleading”
+              (Danioloi, 2020, pg. 2), stressing the need for critical thinking.
+              The internet contains misinformation, cultural homogenization, and
+              even online radicalization are real dangers.
+            </p>
+            <h3>Moving Forward</h3>
+            <p>
+              A solution for these issues is that we need universal access and
+              we need digital literacy programs to ensure people can navigate
+              the internet safely. We also need address ethical issues in the
+              internet world, ensuring that tech serves humanity and not the
+              other way around.
+            </p>
+            <h2>
+              “Internet Access is a Fundamental Right. Especially, Amidst a
+              Pandemic” – Spyros Kasapis
+            </h2>
+            <p>
+              This blog will engage with Kasapis’s reading. The COVID-19
+              pandemic did not just disrupt our lives, it exposed inequalities
+              in the digital realm. Spyros argues that the internet turned from
+              a convenience into a necessity.
+            </p>
+            <h3>Digital Divide</h3>
+            <p>
+              Everybody was locked in their houses, and their only access to
+              communication with the outside world was through the internet.
+              University, schools and workplaces went online, so that people did
+              not lose this time. Kasapis highlights in her reading how lockdown
+              forced education, work, and commerce online, leaving those without
+              internet access to be left out and lacking tools. The pandemic
+              didn’t create this divide, it just made it impossible to ignore.
+            </p>
+            <h3>Is Internet Access a Human Right?</h3>
+            <p>
+              Some people argue the internet is a tool to exercise, while others
+              declare it is a fundamental right itself. I personally feel like
+              internet access is a human right, because it is a gateway to
+              modern life. People need it for education, jobs, healthcare, and
+              even social connections, which is essential for opportunities. The
+              pandemic proved this, when everything moved online, those without
+              access were left behind, deepening inequality.
+            </p>
+            <h3>Final Thoughts</h3>
+            <p>
+              The pandemic proved internet access is not a luxury, it is a
+              necessity for the digital age. Whether we classify it as a right
+              or a utility, the stakes are the same, exclusion fuels inequality.
+            </p>
+            <h2>References</h2>
+            <p>
+              <a
+                href="https://www.internetjustsociety.org/the-need-for-global-internet-connectivity"
+                class="url"
+                target="_blank"
+                >Daniolou, C. (2020). The Need for Global Internet Connectivity.
+                [online] www.internetjustsociety.org. Available at:
+                https://www.internetjustsociety.org/the-need-for-global-internet-connectivity.
+              </a>
+              <br />
+            </p>
+            <p>
+              <a
+                href="https://www.internetjustsociety.org/internet-access-is-a-fundamental-rights-especially-amidst-a-pandemic"
+                class="url"
+                target="_blank"
+                >www.internetjustsociety.org. (2020). Internet Access is a
+                Fundamental Right. [online] Available at:
+                https://www.internetjustsociety.org/internet-access-is-a-fundamental-rights-especially-amidst-a-pandemic.
+                ‌</a
+              >
+              <br />
+            </p>
+          </div>
+        </article>
       </article>
-      </article>
-      <img id = "backToTopBtn" src = "../homeImages/topButton.png" alt = "back to top button" title = "Go to top" />
+      <img
+        id="backToTopBtn"
+        src="../homeImages/topButton.png"
+        alt="back to top button"
+        title="Go to top"
+      />
     </main>
-   <footer>
+    <footer>
       <nav class="footer-nav">
         <ul>
           <li>

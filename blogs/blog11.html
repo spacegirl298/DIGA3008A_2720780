@@ -12,19 +12,19 @@
     <link rel="stylesheet" href="blogs.css" />
     <link rel="stylesheet" href="../main.css" />
     <link rel="icon" href="../homeImages/logo.png" type="image/x-icon" />
-    <script src = "blogs.js"></script>
-    <script src = "../main.js"></script>
+    <script src="blogs.js"></script>
+    <script src="../main.js"></script>
     <title>Blog</title>
   </head>
   <body>
     <header>
-     <nav class="navbar">
-        <div class = "hamburger">
+      <nav class="navbar">
+        <div class="hamburger">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
         </div>
-        <ul class = "nav-menu">
+        <ul class="nav-menu">
           <li><a href="../index.html">Home</a></li>
           <li><a href="../portfolio/portfolio.html">Portfolio</a></li>
           <li><a href="../blogs/mainBlogs.html">Blogs</a></li>
@@ -40,147 +40,258 @@
       </nav>
     </header>
     <main>
-       <div id="drawerOverlay" class="drawer-overlay">
-  <div class="drawer-content">
-  <div class="side-menu">
-  <ul>
-    <li><a href="blog1.html"><img src="./images/blog1Menu.png" alt="Blog 1 Button" class="blog-btn" class = active></a></li>
-     <li><a href="blog2.html"><img src="./images/blog2Menu.png" alt="Blog 2 Button" class="blog-btn"></a></li>
-     <li><a href="blog3.html"><img src="./images/blog3Menu.png" alt="Blog 3 Button" class="blog-btn"></a></li>
-    <li><a href="blog4.html"><img src="./images/blog4Menu.png" alt="Blog 4 Button" class="blog-btn"></a></li>
-    <li><a href="blog5.html"><img src="./images/blog5Menu.png" alt="Blog 5 Button" class="blog-btn"></a></li>
-    <li><a href="blog6.html"><img src="./images/blog6Menu.png" alt="Blog 6 Button" class="blog-btn"></a></li>
-    <li><a href="blog7.html"><img src="./images/blog7Menu.png" alt="Blog 7 Button" class="blog-btn"></a></li>
-    <li><a href="blog8.html"><img src="./images/blog8Menu.png" alt="Blog 8 Button" class="blog-btn"></a></li>
-    <li><a href="blog9.html"><img src="./images/blog9Menu.png" alt="Blog 9 Button" class="blog-btn"></a></li>
-    <li><a href="blog10.html"><img src="./images/blog10Menu.png" alt="Blog 10 Button" class="blog-btn"></a></li>
-    <li><a href="blog11.html"><img src="./images/blog11Menu.png" alt="Blog 11 Button" class="blog-btn"></a></li>
-      </ul>
-    </div>
-    <button id="drawerToggle" class="drawer-toggle" onclick="toggleDrawer()">
-  <img src="./images/openMenu.png" class="toggle-arrow open-arrow" alt="Open menu">
-  <img src="./images/closeMenu.png" class="toggle-arrow close-arrow" alt="Close menu">
-</button>
-  </div>
-</div>
-       <article class = "submenu">
+      <div id="drawerOverlay" class="drawer-overlay">
+        <div class="drawer-content">
+          <div class="side-menu">
+            <ul>
+              <li>
+                <a href="blog1.html"
+                  ><img
+                    src="./images/blog1Menu.png"
+                    alt="Blog 1 Button"
+                    class="blog-btn"
+                    class="active"
+                /></a>
+              </li>
+              <li>
+                <a href="blog2.html"
+                  ><img
+                    src="./images/blog2Menu.png"
+                    alt="Blog 2 Button"
+                    class="blog-btn"
+                /></a>
+              </li>
+              <li>
+                <a href="blog3.html"
+                  ><img
+                    src="./images/blog3Menu.png"
+                    alt="Blog 3 Button"
+                    class="blog-btn"
+                /></a>
+              </li>
+              <li>
+                <a href="blog4.html"
+                  ><img
+                    src="./images/blog4Menu.png"
+                    alt="Blog 4 Button"
+                    class="blog-btn"
+                /></a>
+              </li>
+              <li>
+                <a href="blog5.html"
+                  ><img
+                    src="./images/blog5Menu.png"
+                    alt="Blog 5 Button"
+                    class="blog-btn"
+                /></a>
+              </li>
+              <li>
+                <a href="blog6.html"
+                  ><img
+                    src="./images/blog6Menu.png"
+                    alt="Blog 6 Button"
+                    class="blog-btn"
+                /></a>
+              </li>
+              <li>
+                <a href="blog7.html"
+                  ><img
+                    src="./images/blog7Menu.png"
+                    alt="Blog 7 Button"
+                    class="blog-btn"
+                /></a>
+              </li>
+              <li>
+                <a href="blog8.html"
+                  ><img
+                    src="./images/blog8Menu.png"
+                    alt="Blog 8 Button"
+                    class="blog-btn"
+                /></a>
+              </li>
+              <li>
+                <a href="blog9.html"
+                  ><img
+                    src="./images/blog9Menu.png"
+                    alt="Blog 9 Button"
+                    class="blog-btn"
+                /></a>
+              </li>
+              <li>
+                <a href="blog10.html"
+                  ><img
+                    src="./images/blog10Menu.png"
+                    alt="Blog 10 Button"
+                    class="blog-btn"
+                /></a>
+              </li>
+              <li>
+                <a href="blog11.html"
+                  ><img
+                    src="./images/blog11Menu.png"
+                    alt="Blog 11 Button"
+                    class="blog-btn"
+                /></a>
+              </li>
+            </ul>
+          </div>
+          <button
+            id="drawerToggle"
+            class="drawer-toggle"
+            onclick="toggleDrawer()"
+          >
+            <img
+              src="./images/openMenu.png"
+              class="toggle-arrow open-arrow"
+              alt="Open menu"
+            />
+            <img
+              src="./images/closeMenu.png"
+              class="toggle-arrow close-arrow"
+              alt="Close menu"
+            />
+          </button>
+        </div>
+      </div>
+      <article class="submenu">
         <ul>
-          <li><a class = "menu-link" href="blog10.html"><img src = "./images/previousBtn.png" alt = "framed text that reads previous"/></a></li>
-          <li><a class = "menu-link" href="blog1.html"><img src = "./images/nextBtn.png" alt = "framed text that reads next"/></a></li>
+          <li>
+            <a class="menu-link" href="blog10.html"
+              ><img
+                src="./images/previousBtn.png"
+                alt="framed text that reads previous"
+            /></a>
+          </li>
+          <li>
+            <a class="menu-link" href="blog1.html"
+              ><img
+                src="./images/nextBtn.png"
+                alt="framed text that reads next"
+            /></a>
+          </li>
         </ul>
       </article>
-      <article class = "text">
-      <section class = "intro">
-        <h1 class="entry-title">Blog 11</h1>
-      </section>
-      <article class="hentry">
-        <div class = "e-content">
-        <p>
-          Published by
-          <a
-            class="p-author"
-            href="https://www.linkedin.com/in/jessica-jardim?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
-            target="_blank"
-          >
-            Jessica Jardim</a
-          >
-        </p>
-        <p>
-          <time class="dt-published" datetime="2025-04-21"
-            >21<sup>st</sup>April 2025</time
-          >
-        </p>
-        <h1>Designing a Moral Web: Toward an Ethical Internet</h1>
-        <p>
-          My idea of an ethical internet is a space that fosters inclusivity,
-          responsibility, genuine connection and does not harm or exclude users.
-          This blog will be an exploration of my ideas of an ethical internet
-          and will be drawing from Shani Orgad’s reading, The internet as a
-          moral space: the legacy of Roger Silverstone, to further explore the
-          ideas of an ethical internet.
-        </p>
-        <p>
-          One concept that Shani Orgad mentions in his reading, is Roger
-          Silverstone’s idea of “proper distance” (Orgad, 2007, pg. 34). This
-          idea encourages finding a right balance between closeness and
-          detachment in online interactions to foster moral responsibility.
-          Creating it to be space where users are neither so distance that they
-          ignore other’s humanity or so close that they exploit or overwhelm
-          other users. Currently, many social media platforms prioritize
-          engagement at all costs, which amplifies polarization and outrage.
-          Social media platforms could design algorithms that prioritize
-          meaningful dialogue over sensationalism. This would help people
-          connect better and reduce arguments and division. Platforms could
-          introduce controlled exposure to diverse perspective, to not overwhelm
-          users, but to humanize. By redesigning algorithms, we can reduce
-          polarization and encourage empathy.
-        </p>
-        <p>
-          The internet is a space where many can feel like they are in an
-          inhospitable environment. As Silverstone notes, the “click of a mouse”
-          can exclude voices that don’t conform (Orgad, 2007, pg. 38). The way
-          that the internet has been designed has allowed for people to have
-          freedom of speech, but within this freedom of speech users have been
-          ostracized for speaking up. This creates an environment where many
-          users, especially those from minority groups, feel unwelcome, unsafe,
-          or silenced. My vision of an ethical internet actively uplifts
-          marginalized voices instead of silencing them. This could be done
-          through changing algorithms, creating safe spaces and holding people
-          accountable. Algorithms could be altered to boost underrepresented
-          perspectives rather than promoting only viral content. An AI could be
-          created to detect harassment towards a user and limit visibility of
-          these replies. There should be a hate speech filter, which allows
-          users to filter these comments without silencing debates. Users should
-          be held accountable for comments which they leave on peoples posts and
-          platforms should be held accountable for allowing hate speech and
-          bullying to occur within their platform.
-        </p>
-        <p>
-          Social media has created users to be obsessed with metrics (likes,
-          follows, view counts), creating a toxic environment where users
-          increasingly equate these numbers to their personal worth. By removing
-          these metrics while still slowing users to follow accounts and see
-          content, platforms could break this harmful cycle. Without these
-          numbers, users might more authentically, focusing on meaningful
-          interactions rather than performance metrics. This approach would
-          remove the psychological pressure to constantly measure up to
-          benchmarks.
-        </p>
-        <p>
-          An ethical internet must prioritize the safety of its most vulnerable
-          users which are children. While platforms impose age restrictions,
-          these measures are often ineffective, as young users easily bypass
-          them, exposing themselves to predators and harmful content. Platforms
-          must prioritize safety over engagement, ensuring protection for
-          minors. Orgad mentions the internet functioning as a “mediapolis,”
-          which is an ethical internet that has a duty of care to all users,
-          especially the most vulnerable. (Orgad, 2007, pg. 33).
-        </p>
-        <p>
-          In reimagining an ethical internet, we need to move beyond current
-          platforms that reward exclusion and superficial interactions. We need
-          to create a digital space that is rooted in empathy, responsibility,
-          and inclusivity. To create an ethical internet, means to intentionally
-          design and rethink algorithms, revaluate platform priorities, and
-          actively protect and amplify marginalised voices.
-        </p>
-          <h2>References</h2>
-          <p>
-            <a
-              href="https://doi.org/10.1177/1461444807075202"
-              class="url"
-              target="_blank"
-            >
-              Orgad, S. (2007). The internet as a moral space: the legacy of
-              Roger Silverstone. New Media & Society, 9(1), pp.33–41.
-              doi:https://doi.org/10.1177/1461444807075202.</a
-            >
-            <br />
-          </p>
-        </div>
+      <article class="text">
+        <section class="intro">
+          <h1 class="entry-title">Blog 11</h1>
+        </section>
+        <article class="hentry">
+          <div class="e-content">
+            <p>
+              Published by
+              <a
+                class="p-author"
+                href="https://www.linkedin.com/in/jessica-jardim?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                target="_blank"
+              >
+                Jessica Jardim</a
+              >
+            </p>
+            <p>
+              <time class="dt-published" datetime="2025-04-21"
+                >21<sup>st</sup>April 2025</time
+              >
+            </p>
+            <h1>Designing a Moral Web: Toward an Ethical Internet</h1>
+            <p>
+              My idea of an ethical internet is a space that fosters
+              inclusivity, responsibility, genuine connection and does not harm
+              or exclude users. This blog will be an exploration of my ideas of
+              an ethical internet and will be drawing from Shani Orgad’s
+              reading, The internet as a moral space: the legacy of Roger
+              Silverstone, to further explore the ideas of an ethical internet.
+            </p>
+            <p>
+              One concept that Shani Orgad mentions in his reading, is Roger
+              Silverstone’s idea of “proper distance” (Orgad, 2007, pg. 34).
+              This idea encourages finding a right balance between closeness and
+              detachment in online interactions to foster moral responsibility.
+              Creating it to be space where users are neither so distance that
+              they ignore other’s humanity or so close that they exploit or
+              overwhelm other users. Currently, many social media platforms
+              prioritize engagement at all costs, which amplifies polarization
+              and outrage. Social media platforms could design algorithms that
+              prioritize meaningful dialogue over sensationalism. This would
+              help people connect better and reduce arguments and division.
+              Platforms could introduce controlled exposure to diverse
+              perspective, to not overwhelm users, but to humanize. By
+              redesigning algorithms, we can reduce polarization and encourage
+              empathy.
+            </p>
+            <p>
+              The internet is a space where many can feel like they are in an
+              inhospitable environment. As Silverstone notes, the “click of a
+              mouse” can exclude voices that don’t conform (Orgad, 2007, pg.
+              38). The way that the internet has been designed has allowed for
+              people to have freedom of speech, but within this freedom of
+              speech users have been ostracized for speaking up. This creates an
+              environment where many users, especially those from minority
+              groups, feel unwelcome, unsafe, or silenced. My vision of an
+              ethical internet actively uplifts marginalized voices instead of
+              silencing them. This could be done through changing algorithms,
+              creating safe spaces and holding people accountable. Algorithms
+              could be altered to boost underrepresented perspectives rather
+              than promoting only viral content. An AI could be created to
+              detect harassment towards a user and limit visibility of these
+              replies. There should be a hate speech filter, which allows users
+              to filter these comments without silencing debates. Users should
+              be held accountable for comments which they leave on peoples posts
+              and platforms should be held accountable for allowing hate speech
+              and bullying to occur within their platform.
+            </p>
+            <p>
+              Social media has created users to be obsessed with metrics (likes,
+              follows, view counts), creating a toxic environment where users
+              increasingly equate these numbers to their personal worth. By
+              removing these metrics while still slowing users to follow
+              accounts and see content, platforms could break this harmful
+              cycle. Without these numbers, users might more authentically,
+              focusing on meaningful interactions rather than performance
+              metrics. This approach would remove the psychological pressure to
+              constantly measure up to benchmarks.
+            </p>
+            <p>
+              An ethical internet must prioritize the safety of its most
+              vulnerable users which are children. While platforms impose age
+              restrictions, these measures are often ineffective, as young users
+              easily bypass them, exposing themselves to predators and harmful
+              content. Platforms must prioritize safety over engagement,
+              ensuring protection for minors. Orgad mentions the internet
+              functioning as a “mediapolis,” which is an ethical internet that
+              has a duty of care to all users, especially the most vulnerable.
+              (Orgad, 2007, pg. 33).
+            </p>
+            <p>
+              In reimagining an ethical internet, we need to move beyond current
+              platforms that reward exclusion and superficial interactions. We
+              need to create a digital space that is rooted in empathy,
+              responsibility, and inclusivity. To create an ethical internet,
+              means to intentionally design and rethink algorithms, revaluate
+              platform priorities, and actively protect and amplify marginalised
+              voices.
+            </p>
+            <h2>References</h2>
+            <p>
+              <a
+                href="https://doi.org/10.1177/1461444807075202"
+                class="url"
+                target="_blank"
+              >
+                Orgad, S. (2007). The internet as a moral space: the legacy of
+                Roger Silverstone. New Media & Society, 9(1), pp.33–41.
+                doi:https://doi.org/10.1177/1461444807075202.</a
+              >
+              <br />
+            </p>
+          </div>
+        </article>
       </article>
-      </article>
-      <img id = "backToTopBtn" src = "../homeImages/topButton.png" alt = "back to top button" title = "Go to top" />
+      <img
+        id="backToTopBtn"
+        src="../homeImages/topButton.png"
+        alt="back to top button"
+        title="Go to top"
+      />
     </main>
     <footer>
       <nav class="footer-nav">

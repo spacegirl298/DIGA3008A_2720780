@@ -12,21 +12,20 @@
     <link rel="stylesheet" href="blogs.css" />
     <link rel="stylesheet" href="../main.css" />
     <link rel="icon" href="../homeImages/logo.png" type="image/x-icon" />
-    <script src = "blogs.js"></script>
-    <script src = "../main.js"></script>
+    <script src="blogs.js"></script>
+    <script src="../main.js"></script>
     <title>Blog</title>
   </head>
   <body>
-   <header>
-    <nav class="navbar">
-        <div class = "hamburger">
+    <header>
+      <nav class="navbar">
+        <div class="hamburger">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
         </div>
-        <ul class = "nav-menu">
-         <li><a href ="../index.html">Home</a>
-          </li>
+        <ul class="nav-menu">
+          <li><a href="../index.html">Home</a></li>
           <li><a href="../portfolio/portfolio.html">Portfolio</a></li>
           <li><a href="../blogs/mainBlogs.html">Blogs</a></li>
           <li><a href="../essays/essays.html">Essays</a></li>
@@ -41,302 +40,413 @@
       </nav>
     </header>
     <main>
-       <div id="drawerOverlay" class="drawer-overlay">
-  <div class="drawer-content">
-  <div class="side-menu">
-  <ul>
-    <li><a href="blog1.html"><img src="./images/blog1Menu.png" alt="Blog 1 Button" class="blog-btn" class = active></a></li>
-     <li><a href="blog2.html"><img src="./images/blog2Menu.png" alt="Blog 2 Button" class="blog-btn"></a></li>
-     <li><a href="blog3.html"><img src="./images/blog3Menu.png" alt="Blog 3 Button" class="blog-btn"></a></li>
-    <li><a href="blog4.html"><img src="./images/blog4Menu.png" alt="Blog 4 Button" class="blog-btn"></a></li>
-    <li><a href="blog5.html"><img src="./images/blog5Menu.png" alt="Blog 5 Button" class="blog-btn"></a></li>
-    <li><a href="blog6.html"><img src="./images/blog6Menu.png" alt="Blog 6 Button" class="blog-btn"></a></li>
-    <li><a href="blog7.html"><img src="./images/blog7Menu.png" alt="Blog 7 Button" class="blog-btn"></a></li>
-    <li><a href="blog8.html"><img src="./images/blog8Menu.png" alt="Blog 8 Button" class="blog-btn"></a></li>
-    <li><a href="blog9.html"><img src="./images/blog9Menu.png" alt="Blog 9 Button" class="blog-btn"></a></li>
-    <li><a href="blog10.html"><img src="./images/blog10Menu.png" alt="Blog 10 Button" class="blog-btn"></a></li>
-    <li><a href="blog11.html"><img src="./images/blog11Menu.png" alt="Blog 11 Button" class="blog-btn"></a></li>
-      </ul>
-    </div>
-    <button id="drawerToggle" class="drawer-toggle" onclick="toggleDrawer()">
-  <img src="./images/openMenu.png" class="toggle-arrow open-arrow" alt="Open menu">
-  <img src="./images/closeMenu.png" class="toggle-arrow close-arrow" alt="Close menu">
-</button>
-  </div>
-</div>
-        <article class = "submenu">
+      <div id="drawerOverlay" class="drawer-overlay">
+        <div class="drawer-content">
+          <div class="side-menu">
+            <ul>
+              <li>
+                <a href="blog1.html"
+                  ><img
+                    src="./images/blog1Menu.png"
+                    alt="Blog 1 Button"
+                    class="blog-btn"
+                    class="active"
+                /></a>
+              </li>
+              <li>
+                <a href="blog2.html"
+                  ><img
+                    src="./images/blog2Menu.png"
+                    alt="Blog 2 Button"
+                    class="blog-btn"
+                /></a>
+              </li>
+              <li>
+                <a href="blog3.html"
+                  ><img
+                    src="./images/blog3Menu.png"
+                    alt="Blog 3 Button"
+                    class="blog-btn"
+                /></a>
+              </li>
+              <li>
+                <a href="blog4.html"
+                  ><img
+                    src="./images/blog4Menu.png"
+                    alt="Blog 4 Button"
+                    class="blog-btn"
+                /></a>
+              </li>
+              <li>
+                <a href="blog5.html"
+                  ><img
+                    src="./images/blog5Menu.png"
+                    alt="Blog 5 Button"
+                    class="blog-btn"
+                /></a>
+              </li>
+              <li>
+                <a href="blog6.html"
+                  ><img
+                    src="./images/blog6Menu.png"
+                    alt="Blog 6 Button"
+                    class="blog-btn"
+                /></a>
+              </li>
+              <li>
+                <a href="blog7.html"
+                  ><img
+                    src="./images/blog7Menu.png"
+                    alt="Blog 7 Button"
+                    class="blog-btn"
+                /></a>
+              </li>
+              <li>
+                <a href="blog8.html"
+                  ><img
+                    src="./images/blog8Menu.png"
+                    alt="Blog 8 Button"
+                    class="blog-btn"
+                /></a>
+              </li>
+              <li>
+                <a href="blog9.html"
+                  ><img
+                    src="./images/blog9Menu.png"
+                    alt="Blog 9 Button"
+                    class="blog-btn"
+                /></a>
+              </li>
+              <li>
+                <a href="blog10.html"
+                  ><img
+                    src="./images/blog10Menu.png"
+                    alt="Blog 10 Button"
+                    class="blog-btn"
+                /></a>
+              </li>
+              <li>
+                <a href="blog11.html"
+                  ><img
+                    src="./images/blog11Menu.png"
+                    alt="Blog 11 Button"
+                    class="blog-btn"
+                /></a>
+              </li>
+            </ul>
+          </div>
+          <button
+            id="drawerToggle"
+            class="drawer-toggle"
+            onclick="toggleDrawer()"
+          >
+            <img
+              src="./images/openMenu.png"
+              class="toggle-arrow open-arrow"
+              alt="Open menu"
+            />
+            <img
+              src="./images/closeMenu.png"
+              class="toggle-arrow close-arrow"
+              alt="Close menu"
+            />
+          </button>
+        </div>
+      </div>
+      <article class="submenu">
         <ul>
-          <li><a class = "menu-link" href="blog7.html"><img src = "./images/previousBtn.png" alt = "framed text that reads previous"/></a></li>
-          <li><a class = "menu-link" href="blog9.html"><img src = "./images/nextBtn.png" alt = "framed text that reads next"/></a></li>
+          <li>
+            <a class="menu-link" href="blog7.html"
+              ><img
+                src="./images/previousBtn.png"
+                alt="framed text that reads previous"
+            /></a>
+          </li>
+          <li>
+            <a class="menu-link" href="blog9.html"
+              ><img
+                src="./images/nextBtn.png"
+                alt="framed text that reads next"
+            /></a>
+          </li>
         </ul>
       </article>
-      <article class = "text">
-      <section class = "intro">
-        <h1 class="entry-title">Blog 8</h1>
+      <article class="text">
+        <section class="intro">
+          <h1 class="entry-title">Blog 8</h1>
         </section>
-      <article class="hentry">
-        <div class = "e-content">
-        <p>
-          Published by
-          <a
-            class="p-author"
-            href="https://www.linkedin.com/in/jessica-jardim?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
-            target="_blank"
-          >
-            Jessica Jardim</a
-          >
-        </p>
-        <p>
-          <time class="dt-published" datetime="2025-04-29"
-            >29<sup>th</sup>April 2025</time
-          >
-        </p>
-        <h1>Close Reading of Spyros Kasapis's Article</h1>
-        <div class="e-content">
-          <h2>Introduction</h2>
-          <p>
-            In Spyros Kasapis article, “Internet access is a Fundamental Right,”
-            he argues that internet access is not a merely a modern convenience
-            but an essential human right, especially when bringing in the topic
-            of the Covid-19 pandemic. Global lockdowns forced people to migrate
-            their daily activities, and this digital divide highlighted
-            structural inequality. This blog will be a close reading of
-            Kasapis’s article, critically examining his aims, methodology, key
-            arguments and conclusion, while situating his argument within
-            broader discussions about digital inclusion and the responsibilities
-            of governments and corporations in ensuring access to technology.
-          </p>
-          <h2>SUMMARY</h2>
-          <p>
-            Kasapis’s text argues that access to the internet should be
-            considered a basic human right, he discusses how the COVID-19
-            pandemic highlights these inequalities. He compares internet access
-            to other recognised rights (such as education, healthcare and
-            employment), which increasingly depend on digital connectivity. He
-            emphasizes that the pandemic has intensified people’s dependence on
-            technology, which excludes people from education and access to
-            critical information, due to their lack of access to technology or
-            the internet. He critiques the capitalistic structures that create
-            and deepen this digital divide and call for an equitable digital
-            society governed by fair rules.
-          </p>
-          <h2>Aims</h2>
-          <p>
-            The primary aim of the article is to argue that access to the
-            internet should be recognised as a basic human right in this digital
-            age. He states in his reading that “half the planet does not have
-            equal access to education, health (through digital information) and
-            the labor market.” (Kasapis, 2020, pg. 2) This raises concerns about
-            how the lack of internet access reinforces existing inequalities and
-            limits people to fully participate in society. He aims to examine
-            these issues specifically in the context of times of crisis, like
-            the COVID-19 pandemic. He seeks to raise awareness about the digital
-            divide and push for political and social change.
-          </p>
-          <h2>Methodology</h2>
-          <p>
-            Kasapis took a philosophical and normative approach to write this
-            article, where he combines critiquing socio-politics and moral
-            reasoning.
-          </p>
-          <ul>
-            <li>
-              His argument is grounded in concepts of fairness, justice and
-              human rights. “Lack of food, education, health care and fair
-              working conditions are obstacles to achieving happiness.
-              Therefore, all of the above are – like happiness- human rights.”
-              (Kasapis, 2020, pg. 2) This quote is an example of Kasapis using
-              ethical argumentation.
-            </li>
-            <li>
-              Kasapis uses rhetorical questions in his reading, to encourage
-              internal and governmental reflection.
-            </li>
-            <li>
-              Kasapis uses context from the real world, such as the COVID-19
-              pandemic. This allows the reader to relate to the topic, as we all
-              experienced the struggles of the pandemic, but it also gives a
-              perspective to other people’s lives during the pandemic. This
-              opens readers eyes to their privilege as most didn’t experience
-              these issues. His articles demonstrate how global crises reveals
-              the need for internet access.
-            </li>
-            <li>
-              He critiques the inequality in access and control. He discusses
-              how the rich keep getting wealthier, while half of the world
-              population don’t have access to this wealth and power. This is a
-              critique of power and capitalism.
-            </li>
-          </ul>
-          <h2>Structure</h2>
-          <p>Introduction:</p>
-          <ul>
-            <li>
-              He opens this article by linking happiness to human rights and
-              introduces the topic of internet access.
-            </li>
-          </ul>
-          <p>Body:</p>
-          <ul>
-            <li>
-              He introduces the topic of the COVID-19 pandemic, to discuss how
-              internet access is tied to social participation and survival.
-            </li>
-            <li>
-              He shifts to critique structural inequality, where our
-              capitalistic society has been set up to enrich some and exclude
-              most from the digital world.
-            </li>
-          </ul>
-          <p>Conlusion:</p>
-          <ul>
-            <li>
-              The article does not end with a usual conclusion but ends with
-              rhetorical question which push readers to reflect on their moral
-              and political responsibility.
-            </li>
-          </ul>
-          <h2>Key Argument and Results</h2>
-          <ul>
-            <li>
-              His central argument is that internet access is not a privilege it
-              is a fundamental human right. He connects it with other essential
-              rights such as education, healthcare, and employment.
-            </li>
-            <li>
-              He critiques how the capitalist systems that are emplaced
-              concentrate wealth and digital access to a select few, where half
-              of the world remains disconnected.
-            </li>
-            <li>
-              He calls for state intervention, where the government needs to
-              take moral responsibility. He states that digital access is not
-              just a technological issue but a matter of justice.
-            </li>
-            <li>
-              He exposes the digital divide that occurred during the COVID-19
-              pandemic, where the lack of internet and digital access heightens
-              inequality. He argues that the pandemic became opened people’s
-              eyes to how essential digital access is and how important it is
-              for participation in society.
-            </li>
-            <li>
-              Kasapis has many key arguments, but he does not necessarily offer
-              results. He does not give statistics to his research, but he
-              leaves the reader with a message to reflect on. The message is
-              that the internet is a basic need, and everyone should have access
-              to it.
-            </li>
-          </ul>
-          <h2>Critical Reflection</h2>
-          <p>
-            Kasapis presents a string argument that internet access should be a
-            considered a human right:
-          </p>
-          <ul>
-            <li>
-              He effectively argues that internet access is essential for
-              participating in our modern society. He uses the COVID-19 pandemic
-              as an example to further argue his point and to show how the lack
-              of internet and digital access deepens inequality.
-            </li>
-            <li>
-              He raises important ethical questions and challenges readers to
-              think about justice, fairness and digital inclusion.
-            </li>
-            <li>
-              However, there is no clear solution offered. He calls for change
-              but doesn’t explain how the government or people could
-              realistically make a change.
-            </li>
-            <li>
-              The article could have made a stronger argument by adding data
-              from different countries and classes. He is very general with his
-              argument and doesn’t explore how to work around or with the
-              systems that are already emplaced.
-            </li>
-          </ul>
-          <h2>Relation to Additional Research</h2>
-          <p>United Nations: Internet is Human Right</p>
-          <ul>
-            <li>
-              The UN declared that internet access is tied to human rights.
-              (Francisco, 2012)
-            </li>
-          </ul>
-          <p>The deepening divide – Jan A.G.M. van Dijk</p>
-          <ul>
-            <li>
-              In Dijk’s article he argues that those with lower income or
-              education levels use the internet less effectively, which adds to
-              Kasapis’s point that access to the internet alone is not enough,
-              there needs to be equal opportunities in the digital space.
-            </li>
-          </ul>
-          <h2>Suggestions for Future Research</h2>
-          <p>Pre-Covid and Post-Covid</p>
-          <ul>
-            <li>
-              Researching into the need for internet and digital access before
-              and after the access. Studying the difference between the need for
-              this access.
-            </li>
-          </ul>
-          <p>Studies on Free Internet Programs</p>
-          <ul>
-            <li>
-              Researching into countries that have tried to expand access.
-            </li>
-          </ul>
-          <p>Private companies and the role of the government</p>
-          <ul>
-            <li>
-              Exploring the responsibilities of private companies and the role
-              of the government.
-            </li>
-          </ul>
-          <h2>References</h2>
-          <p>
-            <a
-              href="http://www.internetjustsociety.org/internet-access-is-a-fundamental-rights-especially-amidst-a-pandemic "
-              class="url"
-              target="_blank"
-            >
-              Kasapis, S. (2020) ‘Internet Access is a Fundamental Right’,
-              Institute for Internet & the Just Society [Preprint]. Available
-              at:
-              http://www.internetjustsociety.org/internet-access-is-a-fundamental-rights-especially-amidst-a-pandemic
-            </a>
-            <br />
-            <a
-              href="https://ahumanright.org/press/releases/2012/06-07-12%20A%20Human%20Right%20Release.pdf"
-              class="url"
-              target="_blank"
-            >
-              Francisco, S. (2012). A Human Right | 1 FOR IMMEDIATE RELEASE
-              UNITED NATIONS: INTERNET IS A HUMAN RIGHT. [online] Available at:
-              https://ahumanright.org/press/releases/2012/06-07-12%20A%20Human%20Right%20Release.pdf
-            </a>
-            <br />
-            <a
-              href="doi:https://doi.org/10.1080/15205430701528655."
-              class="url"
-              target="_blank"
-            >
-              Cai, X. (2008). Jan A. G. M. van Dijk.The Deepening Divide:
-              Inequality in the Information Society. Thousand Oaks, CA: Sage,
-              2005, 240 pp., ISBN 141290403X (paperback). Mass Communication and
-              Society, 11(2), pp.221–224.
-              doi:https://doi.org/10.1080/15205430701528655.
-            </a>
-            <br />
-          </p>
-        </div>
+        <article class="hentry">
+          <div class="e-content">
+            <p>
+              Published by
+              <a
+                class="p-author"
+                href="https://www.linkedin.com/in/jessica-jardim?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                target="_blank"
+              >
+                Jessica Jardim</a
+              >
+            </p>
+            <p>
+              <time class="dt-published" datetime="2025-04-29"
+                >29<sup>th</sup>April 2025</time
+              >
+            </p>
+            <h1>Close Reading of Spyros Kasapis's Article</h1>
+
+            <h2>Introduction</h2>
+            <p>
+              In Spyros Kasapis article, “Internet access is a Fundamental
+              Right,” he argues that internet access is not a merely a modern
+              convenience but an essential human right, especially when bringing
+              in the topic of the Covid-19 pandemic. Global lockdowns forced
+              people to migrate their daily activities, and this digital divide
+              highlighted structural inequality. This blog will be a close
+              reading of Kasapis’s article, critically examining his aims,
+              methodology, key arguments and conclusion, while situating his
+              argument within broader discussions about digital inclusion and
+              the responsibilities of governments and corporations in ensuring
+              access to technology.
+            </p>
+            <h2>SUMMARY</h2>
+            <p>
+              Kasapis’s text argues that access to the internet should be
+              considered a basic human right, he discusses how the COVID-19
+              pandemic highlights these inequalities. He compares internet
+              access to other recognised rights (such as education, healthcare
+              and employment), which increasingly depend on digital
+              connectivity. He emphasizes that the pandemic has intensified
+              people’s dependence on technology, which excludes people from
+              education and access to critical information, due to their lack of
+              access to technology or the internet. He critiques the
+              capitalistic structures that create and deepen this digital divide
+              and call for an equitable digital society governed by fair rules.
+            </p>
+            <h2>Aims</h2>
+            <p>
+              The primary aim of the article is to argue that access to the
+              internet should be recognised as a basic human right in this
+              digital age. He states in his reading that “half the planet does
+              not have equal access to education, health (through digital
+              information) and the labor market.” (Kasapis, 2020, pg. 2) This
+              raises concerns about how the lack of internet access reinforces
+              existing inequalities and limits people to fully participate in
+              society. He aims to examine these issues specifically in the
+              context of times of crisis, like the COVID-19 pandemic. He seeks
+              to raise awareness about the digital divide and push for political
+              and social change.
+            </p>
+            <h2>Methodology</h2>
+            <p>
+              Kasapis took a philosophical and normative approach to write this
+              article, where he combines critiquing socio-politics and moral
+              reasoning.
+            </p>
+            <ul>
+              <li>
+                His argument is grounded in concepts of fairness, justice and
+                human rights. “Lack of food, education, health care and fair
+                working conditions are obstacles to achieving happiness.
+                Therefore, all of the above are – like happiness- human rights.”
+                (Kasapis, 2020, pg. 2) This quote is an example of Kasapis using
+                ethical argumentation.
+              </li>
+              <li>
+                Kasapis uses rhetorical questions in his reading, to encourage
+                internal and governmental reflection.
+              </li>
+              <li>
+                Kasapis uses context from the real world, such as the COVID-19
+                pandemic. This allows the reader to relate to the topic, as we
+                all experienced the struggles of the pandemic, but it also gives
+                a perspective to other people’s lives during the pandemic. This
+                opens readers eyes to their privilege as most didn’t experience
+                these issues. His articles demonstrate how global crises reveals
+                the need for internet access.
+              </li>
+              <li>
+                He critiques the inequality in access and control. He discusses
+                how the rich keep getting wealthier, while half of the world
+                population don’t have access to this wealth and power. This is a
+                critique of power and capitalism.
+              </li>
+            </ul>
+            <h2>Structure</h2>
+            <p>Introduction:</p>
+            <ul>
+              <li>
+                He opens this article by linking happiness to human rights and
+                introduces the topic of internet access.
+              </li>
+            </ul>
+            <p>Body:</p>
+            <ul>
+              <li>
+                He introduces the topic of the COVID-19 pandemic, to discuss how
+                internet access is tied to social participation and survival.
+              </li>
+              <li>
+                He shifts to critique structural inequality, where our
+                capitalistic society has been set up to enrich some and exclude
+                most from the digital world.
+              </li>
+            </ul>
+            <p>Conlusion:</p>
+            <ul>
+              <li>
+                The article does not end with a usual conclusion but ends with
+                rhetorical question which push readers to reflect on their moral
+                and political responsibility.
+              </li>
+            </ul>
+            <h2>Key Argument and Results</h2>
+            <ul>
+              <li>
+                His central argument is that internet access is not a privilege
+                it is a fundamental human right. He connects it with other
+                essential rights such as education, healthcare, and employment.
+              </li>
+              <li>
+                He critiques how the capitalist systems that are emplaced
+                concentrate wealth and digital access to a select few, where
+                half of the world remains disconnected.
+              </li>
+              <li>
+                He calls for state intervention, where the government needs to
+                take moral responsibility. He states that digital access is not
+                just a technological issue but a matter of justice.
+              </li>
+              <li>
+                He exposes the digital divide that occurred during the COVID-19
+                pandemic, where the lack of internet and digital access
+                heightens inequality. He argues that the pandemic became opened
+                people’s eyes to how essential digital access is and how
+                important it is for participation in society.
+              </li>
+              <li>
+                Kasapis has many key arguments, but he does not necessarily
+                offer results. He does not give statistics to his research, but
+                he leaves the reader with a message to reflect on. The message
+                is that the internet is a basic need, and everyone should have
+                access to it.
+              </li>
+            </ul>
+            <h2>Critical Reflection</h2>
+            <p>
+              Kasapis presents a string argument that internet access should be
+              a considered a human right:
+            </p>
+            <ul>
+              <li>
+                He effectively argues that internet access is essential for
+                participating in our modern society. He uses the COVID-19
+                pandemic as an example to further argue his point and to show
+                how the lack of internet and digital access deepens inequality.
+              </li>
+              <li>
+                He raises important ethical questions and challenges readers to
+                think about justice, fairness and digital inclusion.
+              </li>
+              <li>
+                However, there is no clear solution offered. He calls for change
+                but doesn’t explain how the government or people could
+                realistically make a change.
+              </li>
+              <li>
+                The article could have made a stronger argument by adding data
+                from different countries and classes. He is very general with
+                his argument and doesn’t explore how to work around or with the
+                systems that are already emplaced.
+              </li>
+            </ul>
+            <h2>Relation to Additional Research</h2>
+            <p>United Nations: Internet is Human Right</p>
+            <ul>
+              <li>
+                The UN declared that internet access is tied to human rights.
+                (Francisco, 2012)
+              </li>
+            </ul>
+            <p>The deepening divide – Jan A.G.M. van Dijk</p>
+            <ul>
+              <li>
+                In Dijk’s article he argues that those with lower income or
+                education levels use the internet less effectively, which adds
+                to Kasapis’s point that access to the internet alone is not
+                enough, there needs to be equal opportunities in the digital
+                space.
+              </li>
+            </ul>
+            <h2>Suggestions for Future Research</h2>
+            <p>Pre-Covid and Post-Covid</p>
+            <ul>
+              <li>
+                Researching into the need for internet and digital access before
+                and after the access. Studying the difference between the need
+                for this access.
+              </li>
+            </ul>
+            <p>Studies on Free Internet Programs</p>
+            <ul>
+              <li>
+                Researching into countries that have tried to expand access.
+              </li>
+            </ul>
+            <p>Private companies and the role of the government</p>
+            <ul>
+              <li>
+                Exploring the responsibilities of private companies and the role
+                of the government.
+              </li>
+            </ul>
+            <h2>References</h2>
+            <p>
+              <a
+                href="http://www.internetjustsociety.org/internet-access-is-a-fundamental-rights-especially-amidst-a-pandemic "
+                class="url"
+                target="_blank"
+              >
+                Kasapis, S. (2020) ‘Internet Access is a Fundamental Right’,
+                Institute for Internet & the Just Society [Preprint]. Available
+                at:
+                http://www.internetjustsociety.org/internet-access-is-a-fundamental-rights-especially-amidst-a-pandemic
+              </a>
+              <br />
+              <a
+                href="https://ahumanright.org/press/releases/2012/06-07-12%20A%20Human%20Right%20Release.pdf"
+                class="url"
+                target="_blank"
+              >
+                Francisco, S. (2012). A Human Right | 1 FOR IMMEDIATE RELEASE
+                UNITED NATIONS: INTERNET IS A HUMAN RIGHT. [online] Available
+                at:
+                https://ahumanright.org/press/releases/2012/06-07-12%20A%20Human%20Right%20Release.pdf
+              </a>
+              <br />
+              <a
+                href="doi:https://doi.org/10.1080/15205430701528655."
+                class="url"
+                target="_blank"
+              >
+                Cai, X. (2008). Jan A. G. M. van Dijk.The Deepening Divide:
+                Inequality in the Information Society. Thousand Oaks, CA: Sage,
+                2005, 240 pp., ISBN 141290403X (paperback). Mass Communication
+                and Society, 11(2), pp.221–224.
+                doi:https://doi.org/10.1080/15205430701528655.
+              </a>
+              <br />
+            </p>
+          </div>
+        </article>
       </article>
-      </article>
-      <img id = "backToTopBtn" src = "../homeImages/topButton.png" alt = "back to top button" title = "Go to top" />
+      <img
+        id="backToTopBtn"
+        src="../homeImages/topButton.png"
+        alt="back to top button"
+        title="Go to top"
+      />
     </main>
-   <footer>
+    <footer>
       <nav class="footer-nav">
         <ul>
           <li>
