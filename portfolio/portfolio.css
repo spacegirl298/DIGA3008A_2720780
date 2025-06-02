@@ -55,31 +55,37 @@ h2{
   align-items: center;
   z-index: 1000;
   cursor: zoom-out;
+  overflow: auto; /* Allows scrolling if content is taller than viewport */
 }
 
 .enlarged-img {
-  max-width: 50vw;
-  max-height: 50vh;
+  max-width: 70vw;
+  max-height: 60vh;
   width: auto;
   height: auto;
   object-fit: contain;
   border: 4px solid rgb(46, 3, 3);
   border-radius: 10px;
   box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
-  transition: transform 0.3s ease;
+  margin-bottom: 20px; /* Space between image and text */
 }
+
 .lightbox-text {
   color: white;
   font-size: 1.2rem;
   text-align: center;
-  margin-top: 10px;
+  max-width: 700px;
+  padding: 0 20px;
+  width: 100%;
+}
+.lightbox-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   max-width: 90%;
-   padding: 20px;
-   
-}.lightbox-wrapper {
-  text-align: center;
-  max-width: 90%;
-  margin: auto;
+  margin: 20px auto;
+  position: relative;
 }
 
 .lightbox-heading {
@@ -134,8 +140,10 @@ h2{
   display: flex;
   justify-content: space-between;
   top: 50%;
+  left: 0;
   transform: translateY(-50%);
   pointer-events: none;
+  z-index: 1001; /* Ensure buttons stay above content */
 }
 
 .lightbox-nav-button {
@@ -159,12 +167,31 @@ h2{
 
 .lightbox-nav-prev {
   border-radius: 0 5px 5px 0;
+    margin-left: -60px;
+  background-image: url('./images/leftArrow.png');
 }
 
 .lightbox-nav-next {
+    margin-right: -60px;
   border-radius: 5px 0 0 5px;
+   background-image: url('./images/rightArrow.png');
 }
 
 .lightbox-wrapper {
   position: relative;
+}
+
+.lightbox-close-button {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 1001;
+  transition: transform 0.2s ease;
+}
+
+.lightbox-close-button:hover {
+  transform: scale(1.1);
 }

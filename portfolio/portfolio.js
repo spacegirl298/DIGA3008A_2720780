@@ -44,13 +44,25 @@ document.addEventListener("DOMContentLoaded", () => {
       description.appendChild(lightboxLink);
     }
 
+    // Close button
+    const closeButton = document.createElement("img");
+    closeButton.src = "./images/close.png"; 
+    closeButton.alt = "Close";
+    closeButton.classList.add("lightbox-close-button");
+    closeButton.addEventListener("click", () => {
+      document.body.removeChild(overlay);
+      document.body.classList.remove("no-scroll");
+      document.removeEventListener("keydown", handleKeyDown);
+    });
+
     // Navigation buttons
     const navButtons = document.createElement("div");
     navButtons.classList.add("lightbox-nav");
 
-    const prevButton = document.createElement("button");
-    prevButton.innerHTML = "&lt;";
+    const prevButton = document.createElement("img");
+    prevButton.src = "./images/leftArrow.png"; 
     prevButton.classList.add("lightbox-nav-button", "lightbox-nav-prev");
+    prevButton.alt = "Previous image";
     prevButton.addEventListener("click", (e) => {
       e.stopPropagation();
       const newIndex = (index - 1 + sectionImages.length) % sectionImages.length;
@@ -58,9 +70,10 @@ document.addEventListener("DOMContentLoaded", () => {
       showLightbox(newIndex, sectionImages);
     });
 
-    const nextButton = document.createElement("button");
-    nextButton.innerHTML = "&gt;";
+    const nextButton = document.createElement("img");
+    nextButton.src = "./images/rightArrow.png"; 
     nextButton.classList.add("lightbox-nav-button", "lightbox-nav-next");
+    nextButton.alt = "Next image";
     nextButton.addEventListener("click", (e) => {
       e.stopPropagation();
       const newIndex = (index + 1) % sectionImages.length;
@@ -68,11 +81,13 @@ document.addEventListener("DOMContentLoaded", () => {
       showLightbox(newIndex, sectionImages);
     });
 
+    // Append buttons to nav container
     navButtons.appendChild(prevButton);
     navButtons.appendChild(nextButton);
 
     const contentWrapper = document.createElement("div");
     contentWrapper.classList.add("lightbox-wrapper");
+    contentWrapper.appendChild(closeButton); // Add close button
     contentWrapper.appendChild(enlargedImg);
     contentWrapper.appendChild(navButtons);
     contentWrapper.appendChild(description);
@@ -85,11 +100,12 @@ document.addEventListener("DOMContentLoaded", () => {
       if (e.target === overlay) {
         document.body.removeChild(overlay);
         document.body.classList.remove("no-scroll");
+        document.removeEventListener("keydown", handleKeyDown);
       }
     });
 
     // Keyboard navigation
-    document.addEventListener("keydown", function handleKeyDown(e) {
+    function handleKeyDown(e) {
       if (e.key === "ArrowLeft") {
         const newIndex = (index - 1 + sectionImages.length) % sectionImages.length;
         document.body.removeChild(overlay);
@@ -103,7 +119,9 @@ document.addEventListener("DOMContentLoaded", () => {
         document.body.classList.remove("no-scroll");
         document.removeEventListener("keydown", handleKeyDown);
       }
-    });
+    }
+    
+    document.addEventListener("keydown", handleKeyDown);
   }
 
   imageContainers.forEach((container, index) => {
