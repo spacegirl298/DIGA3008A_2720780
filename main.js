@@ -50,3 +50,5 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+//API to fetch South Africa's current time and set theme based on the hour
