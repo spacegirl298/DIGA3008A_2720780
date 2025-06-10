@@ -1,56 +1,52 @@
-
-  
- 
-  /*Navigation*/
-  .sub-menu ul {
-  list-style: none; 
+/*Navigation*/
+.sub-menu ul {
+  list-style: none;
   padding: 0;
   margin: 0;
-  display: flex; 
-  gap: 0.5rem; 
-  justify-content: center; 
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
   align-items: center;
 }
 
 .sub-menu li {
-  display: inline-block; 
+  display: inline-block;
 }
 .sub-menu img{
   width: 80%;
 }
 .sub-menu a:hover {
-  filter: brightness(1.2) drop-shadow(0 0 10px #ffffff);
+  filter: brightness(1.2) drop-shadow(0 0 0.625rem #ffffff);
   transform: scale(1.02);
 }
 
-  body {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    color: #000;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    
-  }
-  
-  html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-  }
-  main {
-    flex: 1;
-  }  
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1;
+}
+
 /* GENERAL LAYOUT */
 main {
-  max-width: 800px;
+  max-width: 50rem;
   margin: 0 auto;
- 
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   color: #ffffff;
-  margin-bottom: 9rem;
+  margin-bottom: 5.625rem;
 }
 
 /* INTRO SECTION */
@@ -58,7 +54,7 @@ main {
   font-size: 3rem;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 3.75rem;
   color: #ffffff;
   font-family: 'Cinzel', serif;
 }
@@ -74,9 +70,9 @@ main {
   font-size: 1.5rem;
   margin-top: 1.5em;
   color: #ffffff;
-  border-bottom: 2px solid #ccc;
-  padding-bottom: 5px;
-   font-family: "Libre Baskerville", serif;
+  border-bottom: 0.125rem solid #ccc;
+  padding-bottom: 0.3125rem;
+  font-family: "Libre Baskerville", serif;
   font-weight: 600;
 }
 
@@ -85,7 +81,7 @@ main {
   margin-top: 1.2em;
   color: #ffffff;
   font-style: italic;
-   font-family: "Libre Baskerville", serif;
+  font-family: "Libre Baskerville", serif;
   font-weight: 600;
 }
 
@@ -99,25 +95,23 @@ figure {
   text-align: center;
 }
 .landscape img {
-  width: 500px;
+  width: 31.25rem;
   height: auto;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-
+  border: 0.0625rem solid #ccc;
+  border-radius: 0.5rem;
 }
 figure img {
-  width: 300px;
+  width: 18.75rem;
   height: auto;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-
+  border: 0.0625rem solid #ccc;
+  border-radius: 0.5rem;
 }
 .long-img{
-  width: 150px;
+  width: 9.375rem;
 }
 
 figcaption {
-  margin-top: 8px;
+  margin-top: 0.5rem;
   font-size: 0.9rem;
   color: #e3e3e3;
 }
@@ -132,7 +126,6 @@ figcaption {
   text-decoration: underline;
 }
 
-
 .hentry h2:last-of-type {
   margin-top: 3em;
 }
@@ -142,9 +135,3 @@ figcaption {
   margin-top: 1em;
   word-wrap: break-word;
 }
-
-
-
-
- 
-  

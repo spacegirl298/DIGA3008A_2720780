@@ -18,12 +18,11 @@ body {
 /* GENERAL LAYOUT */
 main {
   flex: 1;
-  max-width: 800px;
+  max-width: 50rem; 
   margin: 0 auto;
-
   line-height: 1.6;
   color: #ffffff;
-  margin-bottom: 9rem;
+  margin-bottom: 5.625rem; 
 }
 
 /* INTRO SECTION */
@@ -31,7 +30,7 @@ main {
   font-size: 3rem;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 3.75rem; 
   color: #ffffff;
   font-family: "Cinzel", serif;
 }
@@ -47,8 +46,8 @@ main {
   font-size: 1.5rem;
   margin-top: 1.5em;
   color: #ffffff;
-  border-bottom: 2px solid #ccc;
-  padding-bottom: 5px;
+  border-bottom: 0.125rem solid #ccc; 
+  padding-bottom: 0.3125rem; 
   font-family: "Libre Baskerville", serif;
   font-weight: 600;
 }
@@ -73,17 +72,17 @@ figure {
 }
 
 figure img {
-  width: 600px;
+  width: 37.5rem; 
   height: auto;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+  border: 0.0625rem solid #ccc;
+  border-radius: 0.5rem; 
 }
 .long-img {
-  width: 150px;
+  width: 9.375rem; 
 }
 
 figcaption {
-  margin-top: 8px;
+  margin-top: 0.5rem; 
   font-size: 0.9rem;
   color: #e3e3e3;
 }
