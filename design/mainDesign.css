@@ -1,13 +1,12 @@
 /*links to sections*/
-h1{
+h1 {
   font-size: 3rem;
   font-weight: bold;
   text-align: center;
-  font-family: 'Cinzel', serif;
+  font-family: "Cinzel", serif;
   color: white;
 }
 .image-row {
- 
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -15,11 +14,9 @@ h1{
   margin: 20px auto 100px;
   padding: 0 10px;
   max-width: 1200px;
- 
-
 }
 .rectangular-image {
-   padding-top: 5%;
+  padding-top: 5%;
   width: 100%;
   height: 100%;
 
@@ -31,4 +28,3 @@ h1{
   filter: brightness(1.2) drop-shadow(0 0 10px #ffffff);
   transform: scale(1.02);
 }
-
