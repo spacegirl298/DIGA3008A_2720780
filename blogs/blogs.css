@@ -32,6 +32,28 @@
   transform: scale(1.02);
 }
 
+/*Design Sub Navigation*/
+.design-submenu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.design-submenu li {
+  display: inline-block;
+}
+.design-submenu img{
+  width: 70%;
+}
+.design-submenu a:hover {
+  filter: brightness(1.2) drop-shadow(0 0 0.625rem #ffffff);
+  transform: scale(1.02);
+}
+
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #000;
@@ -291,7 +313,7 @@ main {
 
 .blog-btn:hover {
   transform: scale(1.05);
-  filter: brightness(1.1) drop-shadow(0 0 0.3125rem rgba(255, 255, 255, 0.3)); /* 5px / 16 */
+  filter: brightness(1.1) drop-shadow(0 0 0.3125rem rgba(255, 255, 255, 0.3)); 
 }
 
 @media (max-width: 48rem) { 
