@@ -101,6 +101,7 @@ body {
 /*experience*/
 .experience {
   padding: 8.125rem;
+  padding-bottom: 10rem;
 }
 
 .entry-title {
@@ -169,6 +170,26 @@ body {
   margin: 0;
   color: #ccc;
 }
+/*skills*/
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 20px; 
+  max-width: 900px; 
+  margin: 0 auto; 
+  padding-bottom: 10rem;
+}
+
+.skills-grid img {
+  width: 100%;
+  height: auto; 
+  display: block;
+}
+.skills-grid img:hover {
+  filter: brightness(1.2) drop-shadow(0 0 0.625rem #ffffff);
+  transform: scale(1.02);
+}
+
 
 /*links to sections*/
 .image-row {
@@ -193,6 +214,7 @@ body {
   filter: brightness(1.2) drop-shadow(0 0 0.625rem #ffffff);
   transform: scale(1.02);
 }
+
 
 /*mobile device*/
 @media (max-width: 48rem) {

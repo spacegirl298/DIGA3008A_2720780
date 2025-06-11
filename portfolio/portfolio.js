@@ -137,13 +137,12 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Cursor effect for games section
-  document.querySelectorAll('.games-section img').forEach(img => {
-    img.addEventListener('mouseenter', () => {
-      img.style.cursor = "url('./images/gameCursor.png'), auto";
-    });
-    img.addEventListener('mouseleave', () => {
-      img.style.cursor = "auto";
-    });
+document.querySelectorAll('.games-section img').forEach(img => {
+  img.addEventListener('mouseenter', () => {
+    img.style.cursor = "url('images/gameCursor.png'), pointer"; // Adjusted path
   });
+  img.addEventListener('mouseleave', () => {
+    img.style.cursor = "auto";
+  });
+});
 });

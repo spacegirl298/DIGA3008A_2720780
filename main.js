@@ -28,9 +28,7 @@ window.addEventListener("load", () => {
   }
 });
 /*this is not working - no clue why*/
-window.addEventListener("load", () => {
-  document.body.style.setProperty('cursor', "url('./homepage/cursor.png'), auto", 'important');
-});
+document.body.style.cursor = "url('./homeImages/cursor.png'), auto";
 
 document.addEventListener('DOMContentLoaded', function() {
     const hamburger = document.querySelector('.hamburger');
@@ -51,4 +49,3 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-//API to fetch South Africa's current time and set theme based on the hour

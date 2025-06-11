@@ -34,9 +34,11 @@ h2{
 }
 
 .image-container:hover {
-  filter: brightness(1.2) drop-shadow(0 0 0.625rem #ffffff);
   transform: scale(1.02);
+  cursor: pointer;
+  filter: brightness(1.2) drop-shadow(0 0 0.625rem #ffffff);
 }
+
 
 .img-overlay {
   position: fixed;
@@ -92,7 +94,7 @@ h2{
 
 .lightbox-paragraph {
   font-size: 1.1rem;
-  color: #f5f5f5;
+  color: #999999;
   max-width: 43.75rem;
   margin: 0 auto;
   line-height: 1.6;
@@ -102,9 +104,6 @@ h2{
   overflow: hidden;
 }
 
-.games-section * {
-  cursor: default !important;
-}
 
 .lightbox-link {
   display: inline-block;
@@ -189,3 +188,4 @@ h2{
 .lightbox-close-button:hover {
   transform: scale(1.1);
 }
+
