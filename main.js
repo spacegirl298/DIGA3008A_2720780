@@ -27,25 +27,23 @@ window.addEventListener("load", () => {
     }
   }
 });
-/*this is not working - no clue why*/
-document.body.style.cursor = "url('./homeImages/cursor.png'), auto";
 
-document.addEventListener('DOMContentLoaded', function() {
-    const hamburger = document.querySelector('.hamburger');
-    const navMenu = document.querySelector('.nav-menu');
-    
-    hamburger.addEventListener('click', function() {
-        
-        hamburger.classList.toggle('active');
-        navMenu.classList.toggle('active');
-    });
-    
-    
-    document.querySelectorAll('.nav-menu li a').forEach(link => {
-        link.addEventListener('click', () => {
-            hamburger.classList.remove('active');
-            navMenu.classList.remove('active');
-        });
-    });
-});
+
+function setTimeBasedMode() {
+  //gets South African time
+  const now = new Date();
+  const saTime = new Date(now.getTime() + (now.getTimezoneOffset() + 120) * 60000);
+  const hours = saTime.getHours();
+
+//checks day time from 6 am to 6pm
+  const isDayTime = hours >= 6 && hours < 18;
+
+  if (isDayTime) {
+    document.body.classList.add('light-mode');
+  } else {
+    document.body.classList.remove('light-mode');
+  }
+}
+document.addEventListener('DOMContentLoaded', setTimeBasedMode);
+setInterval(setTimeBasedMode, 60000);
 
