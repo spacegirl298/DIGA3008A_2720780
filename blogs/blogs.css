@@ -1,9 +1,10 @@
 /*Sub Navigation*/
 .submenu {
   justify-content: center;
-  padding: 1rem;
+  padding: 0rem;
   margin: 0 auto;
   max-width: 125rem; 
+  padding-bottom: 5rem;
 }
 
 .submenu ul {
@@ -33,12 +34,19 @@
 }
 
 /*Design Sub Navigation*/
+.design-submenu {
+ display: flex;
+  justify-content: center;
+  padding: 0;
+  max-width: 120rem; 
+  padding-bottom: 5rem;
+}
 .design-submenu ul {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
-  gap: 0.5rem;
+  gap: 0.6rem;
   justify-content: center;
   align-items: center;
 }
