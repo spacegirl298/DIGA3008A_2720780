@@ -330,9 +330,9 @@ body.light-mode .text {
   line-height: 1.6;
   color: #ffffff;
   margin-bottom: 5.625rem;
-  background-color: rgba(0, 0, 0, 0.8); /* Opaque black background */
-  padding: 2rem; /* Add padding for better spacing */
-  border-radius: 0.5rem; /* Optional: rounded corners */
+  background-color: rgba(0, 0, 0, 0.8); 
+  padding: 2rem; 
+  border-radius: 0.5rem;
 }
 @media (max-width: 48rem) { 
   .blog-btn {
