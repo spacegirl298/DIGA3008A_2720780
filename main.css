@@ -35,10 +35,10 @@ button:hover {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 8.125rem;
+  gap: 6.125rem;
   padding: 1.25rem;
   background-color: rgba(0, 0, 0, 0.5);
-  flex-wrap: wrap;
+ 
 }
 
 nav ul li a {
@@ -297,3 +297,30 @@ body.light-mode #backToTopBtn:hover {
 }
 
 
+.nav-menu li.nav-clock {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: white;
+
+  align-items: center;
+  
+}
+
+body.light-mode .nav-menu li.nav-clock {
+  color: black;
+}
+
+@media (max-width: 48rem) {
+  .nav-menu li.nav-clock {
+    font-size: 1rem;
+    padding: 0.5rem 0;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  body.light-mode .nav-menu li.nav-clock {
+    background-color: rgba(245, 245, 245, 0.6);
+  }
+}
