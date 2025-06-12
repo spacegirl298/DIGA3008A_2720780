@@ -130,7 +130,7 @@ body {
 
 .footerline {
   position: absolute;
-  bottom: 3.125rem;
+  bottom: 4rem;
   left: 50%;
   transform: translateX(-50%);
   width: 90%;
@@ -250,9 +250,13 @@ body {
 }
 
 body.light-mode {
-  background: url("./homeImages/lightBgImg.jpg") no-repeat;
+  background: url("./homeImages/download\ \(8\).jpeg") no-repeat;
+  background-size: cover; 
+  background-attachment: fixed;
+  overflow-x: hidden;
+  background-position: center;
   background-color: #f5f5f5;
-  color: #333;
+  color: #000000;
 }
 
 body.light-mode .navbar ul,
@@ -262,20 +266,20 @@ body.light-mode .footer-nav ul {
 
 body.light-mode nav ul li a,
 body.light-mode .active {
-  color: #333;
+  color: #000000;
 }
 
 body.light-mode nav ul li a::after {
-  background-color: #333;
+  background-color: #000000;
 }
 
 body.light-mode .h-card,
 body.light-mode .vcard,
 body.light-mode .experience,
 body.light-mode .skills-grid {
-  background-color: rgba(245, 245, 245, 0.85);
-  color: #333;
-  border: 1px solid #ddd;
+ 
+  color: #ffffff;
+  
 }
 
 body.light-mode #backToTopBtn:hover {
