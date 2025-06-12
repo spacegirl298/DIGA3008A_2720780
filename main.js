@@ -28,6 +28,23 @@ window.addEventListener("load", () => {
   }
 });
 
+function toggleImagesForLightMode(isLightMode) {
+  const imagesToToggle = [
+    { selector: '.active img', lightSrc: './homeImages/activeImgLight.png', darkSrc: './homeImages/activeImg.png' },
+    { selector: '.navline', lightSrc: './homeImages/navBarLight.png', darkSrc: './homeImages/navBar.png' },
+    { selector: '.footerline', lightSrc: './homeImages/footerBarLight.png', darkSrc: './homeImages/footerBar.png' },
+    { selector: '.vcard img', lightSrc: './homeImages/titleLight.png', darkSrc: './homeImages/title.png' },
+    // Add more images as needed
+  ];
+
+  imagesToToggle.forEach(img => {
+    const element = document.querySelector(img.selector);
+    if (element) {
+      element.src = isLightMode ? img.lightSrc : img.darkSrc;
+    }
+  });
+}
+
 
 function setTimeBasedMode() {
   //gets South African time

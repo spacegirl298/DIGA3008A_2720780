@@ -323,7 +323,17 @@ main {
   transform: scale(1.05);
   filter: brightness(1.1) drop-shadow(0 0 0.3125rem rgba(255, 255, 255, 0.3)); 
 }
-
+body.light-mode .text {
+  flex: 1;
+  max-width: 50rem;
+  margin: 0 auto;
+  line-height: 1.6;
+  color: #ffffff;
+  margin-bottom: 5.625rem;
+  background-color: rgba(0, 0, 0, 0.8); /* Opaque black background */
+  padding: 2rem; /* Add padding for better spacing */
+  border-radius: 0.5rem; /* Optional: rounded corners */
+}
 @media (max-width: 48rem) { 
   .blog-btn {
     max-width: 11.25rem; 
