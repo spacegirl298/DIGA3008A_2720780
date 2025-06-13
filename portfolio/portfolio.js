@@ -81,13 +81,13 @@ document.addEventListener("DOMContentLoaded", () => {
       showLightbox(newIndex, sectionImages);
     });
 
-    // Append buttons to nav container
+    
     navButtons.appendChild(prevButton);
     navButtons.appendChild(nextButton);
 
     const contentWrapper = document.createElement("div");
     contentWrapper.classList.add("lightbox-wrapper");
-    contentWrapper.appendChild(closeButton); // Add close button
+    contentWrapper.appendChild(closeButton); 
     contentWrapper.appendChild(enlargedImg);
     contentWrapper.appendChild(navButtons);
     contentWrapper.appendChild(description);
@@ -139,7 +139,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.querySelectorAll('.games-section img').forEach(img => {
   img.addEventListener('mouseenter', () => {
-    img.style.cursor = "url('images/gameCursor.png'), pointer"; // Adjusted path
+    img.style.cursor = "url('images/gameCursor.png'), pointer";
   });
   img.addEventListener('mouseleave', () => {
     img.style.cursor = "auto";

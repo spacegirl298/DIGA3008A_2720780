@@ -40,46 +40,155 @@
       </nav>
     </header>
     <main>
-      
       <section class="text">
         <section class="intro">
           <h1 class="entry-title">Essay 3</h1>
         </section>
         <article class="hentry">
           <div class="e-content">
-            
-          
+            <h1>
+              Reflection of My Website: Structure, Design, and Development
+              Insights
+            </h1>
+            <h2>Introduction</h2>
+            <p>
+              Developing my website has been an iterative process that
+              highlighted the deep connection between structure, design and
+              functionality. What began as a basic site with disorganised files
+              and isolated styling evolved into a well-organised, maintainable
+              and user-friendly project. Through continuous feedback and
+              testing, I refined each aspect of the website, from its folder
+              structure and semantic HTML to its responsive design and
+              interactive features. This reflection explores how each element of
+              the site was implemented, the rationale behind key decisions and
+              how design decisions ultimately influenced the underlying code. By
+              examining the site through the lenses of structure, semantics,
+              metadata, CSS, JavaScript and UI/UX integration, I am to show the
+              technical growth and decision making behind the final product.
+            </p>
+            <h2>Folder Structure</h2>
+            <p>
+              Initially, my website had a messy file structure, with each html
+              page linked to its own CSS file. This approach was inefficient and
+              made maintenance difficult. After receiving feedback, I
+              restructured my files to reflect the hierarchical architecture of
+              my website, ensuring clarity and easy navigation for both users
+              and me as a developer. My folder structure now mirrors the
+              websites content, with designated folders for Blogs, Design,
+              Essays, Portfolio, and HomeImages. This logical grouping improves
+              navigation and maintainability. Each folder contains relevant
+              HTML, CSS and JavaScript files, ensuring a clean division between
+              sections. This separation enhances readability and makes debugging
+              easier. As part of the restructuring, I consolidated redundant CSS
+              files into a single blog.css, merging shared styles for the
+              Design, Essays, and Blog sections since they used similar layout.
+              This reduced repetition and simplified maintenance. I also updated
+              my naming conventions by adopting camelCase naming, ensuring
+              consistency across all file and class names.
+            </p>
+            <h2>Semantic Markup</h2>
+            <p>
+              My website demonstrates a thoughtful use of semantic HTML,
+              employing elements like header, main, footer, article, and section
+              to provide clear structure, while hcard and hentry microformats
+              enhance machine readability. These markups are used to improve
+              usability by enabling better navigation for search index indexing
+              and screen readers. In my design, blogs and essays section writing
+              pieces are wrapped in article, indicating self-contained content,
+              while section was used for group related content. This improves
+              document structure and helps assistive technologies understand
+              content hierarchy. Throughout the website I maintain a logical
+              heading hierarchy, to improve navigation for screen readers.
+            </p>
+            <h2>CSS</h2>
+            <p>
+              With implementing my CSS, I prioritised creating a clean, modular,
+              and maintainable codebase while ensuring consistent styling across
+              the entire website. I avoided inline styling entirely, relying
+              instead on external CSS rules to centralise styling rules. This
+              approach not only keeps the HTML clean but also makes it easier to
+              update styles globally. For example, I used reusable classes like
+              footer-nav and nav-menu to maintain visual consistency for the
+              navigation and footer bars. I organised the CSS into logical
+              sections split it across files based on functionality. Such as,
+              portfolio.css for the portfolio page, which has different styling
+              to other pages. I attempted at responsive design, but having media
+              queries which adapt layout for mobile devices.
+            </p>
+            <h2>JavaScript</h2>
+            <p>
+              Reflecting on the JavaScript implementation for my website, I can
+              see how each feature enhances both functionality and user
+              experience. The back-to-top scroll, ID smooth scrolling and mobile
+              friendly hamburger menu all rely on event listeners and DOM
+              manipulation to create intuitive interaction points. The animated
+              transitions between blog posts add a polish feel, while the
+              lightbox for my portfolio ensures a clean, focused viewing
+              experience. One of my favourite features is the automatic
+              light/dark mode switch based on South African time, which uses an
+              API to adjust the theme from 6am to 6pm and vice versa. Combined
+              with the live clock in the navigation bar, it personalises the
+              site for local visitors. If I expand this project further, I’d
+              explore more async requests to minimise reloading data and improve
+              performance.
+            </p>
+            <h2>UI & UX Impacting Code</h2>
+            <p>
+              Through designing and coding my website, I see how deeply design
+              choices shape the code. The different themes, hover animations and
+              responsive layouts create an immersive experience, but they also
+              demand careful CSS structuring and JavaScript coordination. For
+              instance, the lightbox gallery’s smooth transitions and navigation
+              arrows work well visually, but they rely on tightly coupled JS and
+              CSS, making future updates tricky. The code which I have written
+              for this website focuses on aesthetics and interactivity, but it
+              also highlights the trad-offs between visual polish and long-term
+              scalability. Moving, forward I’d refactor repetitive styles,
+              document UI patterns more clearly, and test more rigorously for
+              accessibility to strike a better balance. This project has taught
+              that good UI/UX isn’t just about how it looks, it’s about how the
+              code behind it adapts and grows.
+            </p>
+            <h2>Conclusion</h2>
+            <p>
+              Building this website taught me the importance of structure,
+              organisation, and user experience in web development. By refining
+              the folder structure, using semantic HTML, and optimising CSS and
+              JavaScript, I improved both functionality and maintainability.
+              Features like responsive design, dark/light mode, and smooth
+              scrolling enhanced usability, while metadata and microformats
+              boosted accessibility and SEO. This project also revealed areas
+              for improvement, such as reducing repetitive code and ensuring
+              better scalability. Overall, it was a valuable experience that
+              strengthened my technical skills and highlighted the need for
+              clean, efficient coding practices.
+            </p>
           </div>
         </article>
       </section>
-      <img
-        id="backToTopBtn"
-        src="../homeImages/topButton.png"
-        alt="back to top button"
-        title="Go to top"
-      />
-         <article class="design-submenu">
+      <img id="backToTopBtn" alt="back to top button" title="Go to top" />
+      <article class="design-submenu">
         <ul>
           <li>
-            <a class = "menu-link" href = "./essay1.html">
-            <img
+            <a class="menu-link" href="./essay1.html">
+              <img
                 src="./images/essay1Btn.png"
                 alt="framed text that reads Essay 1"
-            />
+              />
             </a>
           </li>
 
           <li>
-            <a class = "menu-link" href="essay2.html"
+            <a class="menu-link" href="essay2.html"
               ><img
                 src="./images/essay2Btn.png"
-                alt="framed text that reads Essay 2"/></a>
-           
+                alt="framed text that reads Essay 2"
+            /></a>
           </li>
           <li>
             <img
-                src="./images/essay3Btn.png"
-                alt="framed text that reads Wireframes"
+              src="./images/essay3Btn.png"
+              alt="framed text that reads Wireframes"
             />
           </li>
         </ul>
